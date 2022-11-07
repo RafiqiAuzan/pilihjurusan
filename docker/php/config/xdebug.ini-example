@@ -3,7 +3,7 @@
 zend_extension=xdebug.so
 xdebug.mode=develop,debug,coverage
 xdebug.client_port=9003
-xdebug.client_host={change to your wsl2 host/localhost}
+;xdebug.client_host={change to your wsl2 host/localhost}
 xdebug.remote_handler=dbgp
 xdebug.start_with_request=yes
 
