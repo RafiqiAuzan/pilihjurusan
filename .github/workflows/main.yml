@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: ./install.sh &&  alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail' && sail up -d 
-      - run: sail php -v
+      - run: ./install.sh && ./vendor/bin/sail up -d 
+      - run: ./vendor/bin/sail php -v
