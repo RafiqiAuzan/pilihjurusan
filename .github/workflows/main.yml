@@ -1,0 +1,14 @@
+name: check-php-sail-version
+run-name: ${{ github.actor }} is learning GitHub Actions
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  check-php-sail-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: ./install.sh &&  alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail' && sail up -d 
+      - run: sail php -v
