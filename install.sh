@@ -13,3 +13,9 @@ else
         sed -i "s/xdebug.client_host=$recent_host/xdebug.client_host=$(hostname -I)/" ./docker/php/config/xdebug.ini
     fi
 fi
+
+if [ ! -f ./.env ]; then
+    cp ./.env.example ./.env
+    app_url=$(grep "^[^#;]" ./.env | grep 'APP_URL=' | sed 's/^.*=//' | sed 's/\/\//\\\/\\\//')
+    sed -i "s/APP_URL=$app_url/APP_URL=https\/\/localhost/" ./.env
+fi

@@ -14,7 +14,7 @@ services:
             WWWUSER: "${WWWUSER}"
             LARAVEL_SAIL: 1
         volumes:
-            - ${APP_PATH_HOST}:${APP_PATH_CONTAINER}${APP_CONTAINER_FLAG}
+            - ./:/var/www/html${APP_CONTAINER_FLAG}
             - ./docker/php/config/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini:ro
             - ./docker/php/config/opcache.ini:/usr/local/etc/php/conf.d/docker-php-ext-opcache.ini:ro
         networks:
@@ -32,7 +32,7 @@ services:
             - app
         volumes:
             - ./docker/nginx/ssl/:/etc/nginx/ssl
-            - ${APP_PATH_HOST}:${APP_PATH_CONTAINER}${APP_CONTAINER_FLAG}
+            - ./:/var/www/html${APP_CONTAINER_FLAG}
             - ./docker/logs/nginx/:/var/log/nginx
             - ./docker/nginx/sites/:/etc/nginx/sites-available
         ports:
