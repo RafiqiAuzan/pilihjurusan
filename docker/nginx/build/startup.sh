@@ -7,6 +7,7 @@ SERVER_NAME=$(grep 'APP_URL' /var/www/html/.env | sed 's/^.*\///')
 if [ "$APP_ENV" == "local" ]; then
     if [ ! -f /etc/nginx/ssl/$SERVER_NAME.crt ]; then
         openssl req -x509 -nodes -days 365 -subj "/CN=Pilih Jurusan CA/OU=Pilih Jurusan IT/O=Pilih Jurusan/L=Jakarta Selatan/C=ID" -addext "subjectAltName=DNS.1:localhost,DNS.2:$SERVER_NAME" -newkey rsa:2048 -keyout /etc/nginx/ssl/$SERVER_NAME.key -out /etc/nginx/ssl/$SERVER_NAME.crt
+        chmod 644 /etc/nginx/ssl/*
     fi
 
     # create a server name based on .env file
