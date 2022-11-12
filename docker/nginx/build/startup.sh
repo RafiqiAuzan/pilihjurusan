@@ -19,15 +19,19 @@ else
     # create a server name based on .env file
     (cd /etc/nginx/sites-available && cp pilihjurusan.conf-example pilihjurusan.conf && sed -i "s/\${SERVER_NAME}/$SERVER_NAME www.$SERVER_NAME/" pilihjurusan.conf)
 fi
-
+sed -i "/listen 80;/d" /etc/nginx/sites-available/pilihjurusan.conf
+sed -i "/listen \[::\]:80 ipv6only=on;/d" /etc/nginx/sites-available/pilihjurusan.conf
 if [ "$APP_SSL" == "secure" ]; then
+
     echo "server {
             listen 80 default_server;
             listen [::]:80 default_server;
             server_name _ $SERVER_NAME;
             return 301 https://\$host\$request_uri;
         }" >/etc/nginx/conf.d/redirect.conf
+
 else
+    sed -i "s/server {/server {\n\tlisten 80;\n\tlisten [::]:80 ipv6only=on;/" /etc/nginx/sites-available/pilihjurusan.conf
     echo "" >/etc/nginx/conf.d/redirect.conf
 fi
 
