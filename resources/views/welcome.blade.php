@@ -1,18 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite('resources/css/app.css')
 </head>
 
 <body>
-    <div class="container py-4 px-3 mx-auto">
-        <h1>Hello, Bootstrap and Vite!</h1>
-        <button class="btn btn-primary">Primary button</button>
-    </div>
-    @vite('resources/js/app.js')
+    <h1 class="text-3xl font-bold underline">
+        Hello world!
+    </h1>
 </body>
 
 </html>
