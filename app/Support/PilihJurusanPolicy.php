@@ -3,19 +3,49 @@
 namespace App\Support;
 
 use Spatie\Csp\Directive;
-use Spatie\Csp\Policies\Basic;
+use Spatie\Csp\Policies\Policy;
+use Illuminate\Http\Request;
+use Spatie\Csp\Keyword;
+use Symfony\Component\HttpFoundation\Response;
 
-class PilihJurusanPolicy extends Basic
+class PilihJurusanPolicy extends Policy
 {
     public function configure()
     {
-        parent::configure();
-        $this->addDirective(Directive::CONNECT, "wss://piljur.test:5173")
-            ->addDirective(Directive::STYLE, [
-                "piljur.test:5173",
-            ])
-            ->addDirective(Directive::SCRIPT, [
-                "piljur.test:5173"
-            ]);
+        // Base Directives
+        $this
+            ->addDirective(Directive::BASE, Keyword::SELF)
+            ->addDirective(Directive::CONNECT, Keyword::SELF)
+            ->addDirective(Directive::DEFAULT, Keyword::SELF)
+            ->addDirective(Directive::FORM_ACTION, Keyword::SELF)
+            ->addDirective(Directive::IMG, Keyword::SELF)
+            ->addDirective(Directive::MEDIA, Keyword::SELF)
+            ->addDirective(Directive::OBJECT, Keyword::NONE)
+            ->addDirective(Directive::SCRIPT, Keyword::SELF)
+            ->addDirective(Directive::STYLE, Keyword::SELF)
+            ->addNonceForDirective(Directive::SCRIPT)
+            ->addNonceForDirective(Directive::STYLE);
+        $this
+            ->addDirective(Directive::STYLE, 'fonts.googleapis.com')
+            ->addDirective(Directive::FONT, 'fonts.gstatic.com');
+        // Local Directives
+        if (config('app.env') == 'local') {
+            $this->addDirective(Directive::CONNECT, "wss://piljur.test:5173")
+                ->addDirective(Directive::STYLE, [
+                    "piljur.test:5173",
+                ])
+                ->addDirective(Directive::SCRIPT, [
+                    "piljur.test:5173"
+                ]);
+        }
+    }
+
+    public function shouldBeApplied(Request $request, Response $response): bool
+    {
+        if (config('app.debug') && ($response->isClientError() || $response->isServerError())) {
+            return false;
+        }
+
+        return parent::shouldBeApplied($request, $response);
     }
 }
