@@ -28,13 +28,12 @@ class PilihJurusanPolicy extends Policy
             ->addNonceForDirective(Directive::STYLE);
         // Local Directives
         if (config('app.env') == 'local') {
-            $this->addDirective(Directive::CONNECT, "wss://piljur.test:5173")
-                ->addDirective(Directive::STYLE, [
-                    "piljur.test:5173",
-                ])
-                ->addDirective(Directive::SCRIPT, [
-                    "piljur.test:5173"
-                ]);
+            $host = preg_replace("(^https?://)", "", config('app.url'));
+            $this
+                ->addDirective(Directive::CONNECT, "wss://$host:5173")
+                ->addDirective(Directive::STYLE, ["$host:5173",])
+                ->addDirective(Directive::IMG, ["$host:5173",])
+                ->addDirective(Directive::SCRIPT, ["$host:5173"]);
         }
     }
 
