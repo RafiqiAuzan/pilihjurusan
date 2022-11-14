@@ -21,13 +21,11 @@ class PilihJurusanPolicy extends Policy
             ->addDirective(Directive::IMG, Keyword::SELF)
             ->addDirective(Directive::MEDIA, Keyword::SELF)
             ->addDirective(Directive::OBJECT, Keyword::NONE)
-            ->addDirective(Directive::SCRIPT, Keyword::SELF)
-            ->addDirective(Directive::STYLE, Keyword::SELF)
+            ->addDirective(Directive::SCRIPT, [Keyword::SELF, 'unsafe-eval'])
+            ->addDirective(Directive::STYLE, [Keyword::SELF, 'fonts.googleapis.com'])
+            ->addDirective(Directive::FONT, 'fonts.gstatic.com')
             ->addNonceForDirective(Directive::SCRIPT)
             ->addNonceForDirective(Directive::STYLE);
-        $this
-            ->addDirective(Directive::STYLE, 'fonts.googleapis.com')
-            ->addDirective(Directive::FONT, 'fonts.gstatic.com');
         // Local Directives
         if (config('app.env') == 'local') {
             $this->addDirective(Directive::CONNECT, "wss://piljur.test:5173")
