@@ -1,5 +1,1 @@
-@extends('errors.minimal')
-
-@section('title', __('Service Unavailable'))
-@section('code', '503')
-@section('message', __('Service Unavailable'))
+<x-layout.error title="Service Unavailable" code="503" message="Server tidak dapat merespons saat ini" />

@@ -1,5 +1,1 @@
-@extends('errors.minimal')
-
-@section('title', __('Unauthorized'))
-@section('code', '401')
-@section('message', __('Unauthorized'))
+<x-layout.error title="Unauthorized" code="401" message="Akses tidak sah" />
