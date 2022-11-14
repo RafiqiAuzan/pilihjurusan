@@ -8,6 +8,7 @@
     <title>Tailwind Login Template by David Grzyb</title>
     <meta name="author" content="David Grzyb">
     <meta name="description" content="">
+    @vite('resources/css/app.css')
     @livewireStyles(['nonce' => csp_nonce()])
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -59,8 +60,8 @@
         <a href="#" class="hover:underline">Privacy</a>
     </footer>
 
+    @vite('resources/js/app.js')
     @livewireScripts(['nonce' => csp_nonce()])
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </body>
 
 </html>
