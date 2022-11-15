@@ -68,10 +68,12 @@ module.exports = {
                         "--tw-prose-links": theme("colors.base[900]"),
                         "--tw-prose-bold": theme("colors.base[900]"),
                         "--tw-prose-counters": theme("colors.base[600]"),
-                        "--tw-prose-bullets": theme("colors.base[400]"),
+                        "--tw-prose-bullets": theme("colors.base[600]"),
                         "--tw-prose-hr": theme("colors.base[300]"),
                         "--tw-prose-quotes": theme("colors.base[900]"),
-                        "--tw-prose-quote-borders": theme("colors.base[300]"),
+                        "--tw-prose-quote-borders": theme(
+                            "colors.secondary[500]"
+                        ),
                         "--tw-prose-captions": theme("colors.base[700]"),
                         "--tw-prose-code": theme("colors.base[900]"),
                         "--tw-prose-pre-code": theme("colors.base[100]"),
