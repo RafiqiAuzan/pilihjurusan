@@ -58,6 +58,15 @@ module.exports = {
             display: ["Plus Jakarta Sans", "-apple-system", "sans-serif"],
             body: ["Poppins", "-apple-system", "sans-serif"],
         },
+        fontWeight: {
+            extralight: "200",
+            light: "300",
+            normal: "400",
+            medium: "500",
+            semibold: "600",
+            bold: "700",
+            extrabold: "800",
+        },
         extend: {
             typography: ({ theme }) => ({
                 piljur: {
