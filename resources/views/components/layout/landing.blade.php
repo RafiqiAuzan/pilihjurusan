@@ -1,5 +1,5 @@
 @props(['class' => ''])
 
-<x-layout.base class="h-screen {{ $class }}">
+<x-layout.base class=" {{ $class }}">
     {{ $slot }}
 </x-layout.base>
