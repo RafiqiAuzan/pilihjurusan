@@ -12,6 +12,20 @@ class PilihJurusanPolicy extends Policy
 {
     public function configure()
     {
+        $styles = [
+            Keyword::SELF,
+            'https://fonts.googleapis.com/',
+            'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css'
+        ];
+        $scripts = [
+            Keyword::SELF,
+            'unsafe-eval',
+        ];
+        $fonts = [
+            Keyword::SELF,
+            'https://fonts.gstatic.com',
+            'https://cdn.jsdelivr.net',
+        ];
         // Base Directives
         $this
             ->addDirective(Directive::BASE, Keyword::SELF)
@@ -21,9 +35,9 @@ class PilihJurusanPolicy extends Policy
             ->addDirective(Directive::IMG, [Keyword::SELF, 'source.unsplash.com', 'images.unsplash.com'])
             ->addDirective(Directive::MEDIA, Keyword::SELF)
             ->addDirective(Directive::OBJECT, Keyword::NONE)
-            ->addDirective(Directive::SCRIPT, [Keyword::SELF, 'unsafe-eval'])
-            ->addDirective(Directive::STYLE, [Keyword::SELF, 'fonts.googleapis.com'])
-            ->addDirective(Directive::FONT, 'fonts.gstatic.com')
+            ->addDirective(Directive::SCRIPT, $scripts)
+            ->addDirective(Directive::STYLE,  $styles)
+            ->addDirective(Directive::FONT, $fonts)
             ->addNonceForDirective(Directive::SCRIPT)
             ->addNonceForDirective(Directive::STYLE);
         // Local Directives

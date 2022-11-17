@@ -20,7 +20,7 @@ module.exports = {
             info: "#1AC8ED",
             warning: "#FBD900",
             danger: "#EB2811",
-            secondary: {
+            primary: {
                 100: "#FFE8DE",
                 200: "#FFD9C6",
                 300: "#F8AB86",
@@ -31,7 +31,7 @@ module.exports = {
                 800: "#B4440E",
                 900: "#983F13",
             },
-            primary: {
+            secondary: {
                 100: "#FFFCEB",
                 200: "#FFF8C9",
                 300: "#FFF3A6",

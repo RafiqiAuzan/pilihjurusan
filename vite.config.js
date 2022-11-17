@@ -27,6 +27,7 @@ export default ({ mode }) => {
                             "resources/css/**",
                             "resources/js/**",
                             "app/View/Components/**",
+                            "app/View/Livewire/**",
                         ],
                     },
                 ],

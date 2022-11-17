@@ -3,7 +3,7 @@
         <div
             class="relative w-full bg-white px-6 py-12 shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5 md:mx-auto md:max-w-3xl lg:max-w-4xl lg:pt-16 lg:pb-28">
 
-            <div class="prose prose-piljur mx-auto mt-8 lg:prose-lg">
+            <article class="prose prose-piljur mx-auto mt-8 lg:prose-lg">
                 <h1>Judul Blog</h1>
                 <p class="lead">Until now, trying to style an article, document, or blog post with Tailwind has been a
                     tedious task that required a keen eye for typography and a lot of complex custom CSS.</p>
@@ -261,7 +261,7 @@
                     why I want things to end that way but I have to assume it's because I think things will look weird
                     or unbalanced if there is a heading too close to the end of the document.</p>
                 <p>What I've written here is probably long enough, but adding this final sentence can't hurt.</p>
-            </div>
+            </article>
         </div>
     </div>
 

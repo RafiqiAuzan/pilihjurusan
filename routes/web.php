@@ -1,5 +1,6 @@
 <?php
 
+use App\View\Livewire\TestPage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,5 @@ Route::get('/', function () {
 Route::get('/blog', function () {
     return view('landing.blog');
 });
+
+Route::get('/test/{page}', TestPage::class);
