@@ -1,6 +1,6 @@
 <?php
 
-use App\View\Livewire\TestPage;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function (Request $request) {
+    dump($request->cookie('tz'));
     return view('pages.home');
 });
 
