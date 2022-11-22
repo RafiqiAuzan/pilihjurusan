@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\Layout;
+namespace App\View\Components\Layouts;
 
 use Butschster\Head\Facades\Meta;
 use Illuminate\View\Component;
@@ -29,6 +29,6 @@ class Base extends Component
      */
     public function render()
     {
-        return view('components.layout.base');
+        return view('components.layouts.base');
     }
 }

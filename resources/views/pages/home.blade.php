@@ -1,6 +1,4 @@
-<x-layout.landing title="Blog" class="text-center">
-
-    <livewire:another-component />
+<x-layouts.landing title="Blog" class="text-center">
 
     <h1>Hello, World!</h1>
     <p>My new page</p>
@@ -11,9 +9,8 @@
             Blog</a>
     </div>
 
-    <x-button size="lg" status="outline" class="mx-auto my-2">
+    <x-atoms.button size="lg" status="outline" class="mx-auto my-2">
         <i class="bi bi-arrow-right-circle-fill"></i> Submit
-    </x-button>
-
-    <livewire:post-likes class="mx-auto my-4" />
-</x-layout.landing>
+    </x-atoms.button>
+    <livewire:sample />
+</x-layouts.landing>
