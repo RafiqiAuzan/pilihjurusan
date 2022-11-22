@@ -13,4 +13,22 @@
         <i class="bi bi-arrow-right-circle-fill"></i> Submit
     </x-atoms.button>
     <livewire:sample />
+    @dateTime($date)
+    <br>
+    @day($date)
+    <br>
+    @month($date)
+    <br>
+    @year($date)
+    <br>
+    @shortDate($date)
+    <br>
+    @fullDate($date)
+    <br>
+    @shortTime($date)
+    <br>
+    @fullTime($date)
+    <br>
+    @dateDiff($date)
+    <br>
 </x-layouts.landing>

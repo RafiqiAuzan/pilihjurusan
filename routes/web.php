@@ -1,5 +1,6 @@
 <?php
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function (Request $request) {
-    dump($request->cookie('tz'));
-    return view('pages.home');
+Route::get('/', function () {
+    dump(request()->cookie('tz'));
+    return view('pages.home', ['date' => Carbon::parse('22-11-2022 10:32')]);
 });
 
 Route::get('/blog', function () {

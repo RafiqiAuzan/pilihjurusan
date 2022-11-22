@@ -194,6 +194,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\MetaTagsServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\BladeServiceProvider::class,
 
     ],
 
