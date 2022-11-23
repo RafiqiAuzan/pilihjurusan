@@ -2,7 +2,7 @@
 
 namespace App\View\Components\Layouts;
 
-use Butschster\Head\Facades\Meta;
+use Butschster\Head\Contracts\MetaTags\MetaInterface;
 use Illuminate\View\Component;
 
 class Base extends Component
@@ -13,9 +13,9 @@ class Base extends Component
      *
      * @return void
      */
-    public function __construct($title = null, $description = null, $keywords = null)
+    public function __construct($title = null, $description = null, $keywords = null, MetaInterface $meta = null)
     {
-        Meta::prependTitle($title)
+        $meta->prependTitle($title)
             ->setDescription($description)
             ->setKeywords($keywords)
             ->setCharset()

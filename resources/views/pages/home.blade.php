@@ -1,4 +1,4 @@
-<x-layouts.landing title="Blog" class="text-center">
+<x-layouts.full-rows title="Aplikasi Tes Psikologi Terbaik" class="text-center">
 
     <h1>Hello, World!</h1>
     <p>My new page</p>
@@ -13,4 +13,4 @@
         <i class="bi bi-arrow-right-circle-fill"></i> Submit
     </x-atoms.button>
     <livewire:sample />
-</x-layouts.landing>
+</x-layouts.full-rows>

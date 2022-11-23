@@ -36,5 +36,6 @@ class MakeErrorPages extends Command
         }
         echo "\033[1m[Artisan: Generate Error Pages]\033[0m\n";
         echo "Successfully updated static error pages to public folder\n";
+        return 1;
     }
 }
