@@ -1,12 +1,15 @@
 {
-    "name": "laravel/laravel",
+    "name": "pilihjurusan/pilihjurusan-web",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "homepage": "https://pilihjurusan.id",
+    "description": "Pilih Jurusan Web is an web based application of our main product based on Laravel with new high end tech available.",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "pilihjurusan",
+        "education"
     ],
-    "license": "MIT",
+    "license": "Private",
     "require": {
         "php": "^8.0.2",
         "butschster/meta-tags": "^2.2",
