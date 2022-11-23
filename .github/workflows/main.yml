@@ -1,12 +1,12 @@
-name: check-php-sail-version
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: run-test
+run-name: Run main tests
 on:
   push:
     branches: ["main"]
   pull_request:
     branches: ["main"]
 jobs:
-  check-php-sail-version:
+  run-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
