@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: ./install && ./vendor/bin/sail up -d
-      - run: ./vendor/bin/sail test
+      - run: ./vendor/bin/sail test --do-not-cache-result
