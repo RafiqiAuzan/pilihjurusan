@@ -1,33 +1,40 @@
 @props(['class' => ''])
 
 <x-layouts.base class=" {{ $class }}">
-  <navbar class="w-full">
-    <div class="container mx-auto">
+  <navbar class="w-full" x-cloak x-data="{ navmenu: false }">
+    <div class="container mx-auto lg:flex lg:items-center lg:justify-between">
       <div class="flex justify-between my-4">
         {{-- Kiri --}}
         <div class="">
           <img src="{{ asset('img/global/mainlogo.webp')}}" alt="Logo Pilih Jurusan">
         </div>
         {{-- Kanan --}}
-        <div class="" x-cloak x-data="{ navmenu: false }">
-          <span @click="navmenu = !navmenu">
+        <div class="flex">
+          <span class="lg:hidden" @click="navmenu = ! navmenu">
             <i class="bi-list"></i>
           </span>
-          <ul :class="navmenu ? 'block' : 'hidden'" class="lg:flex gap-4">
-            <li><a class="hover:underline hover:decoration-primary-500 hover:underline-offset-2 hover:font-semibold transition-all" href="#">sample</a></li>
-            <li><a class="hover:underline hover:decoration-primary-500 hover:underline-offset-2 hover:font-semibold transition-all" href="#">sample</a></li>
-            <li><a class="hover:underline hover:decoration-primary-500 hover:underline-offset-2 hover:font-semibold transition-all" href="#">sample</a></li>
-            <li><a class="hover:underline hover:decoration-primary-500 hover:underline-offset-2 hover:font-semibold transition-all" href="#">sample</a></li>
-            <li>
-              <x-atoms.button size="sm" status="outline"> Login</x-atoms.button>
-            </li>
+        </div>
+      </div>
+      
+      <div :class="{'hidden lg:block' : !navmenu}" 
+      x-show="navmenu"
+      x-transition:enter.duration.500ms
+      x-transition:leave.duration.500ms>
+        <div class="text-center justify-center lg:flex lg:items-center">
+          <ul class=" lg:flex gap-4">
+            <li><a class="hover:underline hover:decoration-primary-500 hover:underline-offset-2 hover:font-semibold transition-all" href="#">Beranda</a></li>
+            <li><a class="hover:underline hover:decoration-primary-500 hover:underline-offset-2 hover:font-semibold transition-all" href="#">Layanan</a></li>
+            <li><a class="hover:underline hover:decoration-primary-500 hover:underline-offset-2 hover:font-semibold transition-all" href="#">Artikel</a></li>
+            <li><a class="hover:underline hover:decoration-primary-500 hover:underline-offset-2 hover:font-semibold transition-all" href="#">Tentang</a></li>
           </ul>
+          
+          <x-atoms.button size="sm" status="outline"> Login</x-atoms.button>
         </div>
       </div>
     </div>
   </navbar>
-  <div class="container mx-auto">
-    <div class="min-h-screen">
+  <div class="bg-base-100">
+    <div class="min-h-screen container mx-auto py-8">
     {{ $slot }}
     </div>
   </div>
