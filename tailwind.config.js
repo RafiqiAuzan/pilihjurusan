@@ -1,7 +1,9 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
     content: ["./resources/**/*.blade.php", "./resources/**/*.js"],
     theme: {
         colors: {
+            green: colors.green,
             dark: {
                 100: "#1D1E1F",
                 200: "#343536",
@@ -57,6 +59,15 @@ module.exports = {
         fontFamily: {
             display: ["Plus Jakarta Sans", "-apple-system", "sans-serif"],
             body: ["Poppins", "-apple-system", "sans-serif"],
+        },
+        container: {
+            padding: {
+                DEFAULT: '1.25rem',
+                sm: '0.75rem',
+                lg: '1.5rem',
+                xl: '1.5rem',
+                '2xl': '1.5rem',
+            },
         },
         fontWeight: {
             extralight: "200",
