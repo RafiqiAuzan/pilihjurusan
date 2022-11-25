@@ -9,7 +9,7 @@
             <div class="grid grid-cols-1 pt-5 md:grid-cols-2 xl:grid-cols-3 px-14">
 
                 <div class="p-3">
-                    <div class="pb-10 border border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300">
+                    <div class="h-full pb-10 border border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300">
                         <div class="justify-center p-3 mx-auto w-14 h-14 bg-secondary-500 item-center rounded-3xl">
                             <div class="mb-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="p-3">
-                    <div class="pb-10 border border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300">
+                    <div class="h-full pb-10 border border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300">
                         <div class="p-3 mx-auto w-14 h-14 bg-secondary-500 rounded-3xl">
                             <div class="mb-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="p-3">
-                    <div class="pb-10 border border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300">
+                    <div class="h-full pb-10 border border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300">
                         <div class="p-3 mx-auto w-14 h-14 bg-secondary-500 rounded-3xl">
                             <div class="mb-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="p-3">
-                    <div class="pb-10 border border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300">
+                    <div class="h-full pb-10 border border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300">
                         <div class="p-3 mx-auto w-14 h-14 bg-secondary-500 rounded-3xl">
                             <div class="mb-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cup-hot" viewBox="0 0 16 16">
@@ -91,7 +91,7 @@
                 </div>
 
                 <div class="p-3">
-                    <div class="pb-10 border border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300">
+                    <div class="h-full pb-10 border border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300">
                         <div class="p-3 mx-auto w-14 h-14 bg-secondary-500 rounded-3xl">
                             <div class="mb-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
@@ -110,7 +110,7 @@
                 </div>
 
                 <div class="p-3">
-                    <div class="pb-10 border border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300">
+                    <div class="h-full pb-10 border border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300">
                         <div class="p-3 mx-auto w-14 h-14 bg-secondary-500 rounded-3xl">
                             <div class="mb-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
