@@ -74,7 +74,7 @@
               </ul>
             </div>
           </div>
-          <div class="w-full border-t mt-14 text-base-200 text-sm font-display">
+          <div class="w-full border-t mt-8 text-base-200 text-sm font-display">
             <p class="mt-2">© 2020 - 2022 Pilihjurusan | Merek dagang dari PT. Pilihanmu Indonesia Jaya</p>
           </div>
         </div>
