@@ -3,20 +3,20 @@
 namespace App\Http\Requests\Auth;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Propaganistas\LaravelPhone\PhoneNumber;
 
 class LoginRequest extends FormRequest
 {
-
+    /**
+     * Prepare and parse validation input
+     * 
+     * @return void
+     */
     protected function prepareForValidation()
     {
         $this->merge([
-            'phone_email' => str_replace('+', '', $this->phone_email)
+            'phone_email' => (string) PhoneNumber::make($this->phone_email, getCountryCode())
         ]);
-        if (filter_var($this->phone_email, FILTER_VALIDATE_EMAIL)) {
-
-        }
-
-
     }
 
     /**
@@ -26,14 +26,29 @@ class LoginRequest extends FormRequest
      */
     public function rules()
     {
-        $loginWith = filter_var($this->phone_email, FILTER_VALIDATE_EMAIL) ? 'email' : 'phone_number';
-        $rule = [
-            'email' => 'email:rfc,dns',
-            'phone_number' => 'numeric|min_digits:10'
-        ];
+        $phoneRule = getPhoneRule();
+        $rule = isEmail($this->phone_email) ? 'email:rfc,dns' : "phone:$phoneRule," . getCountryCode();
         return [
-            'phone_email' => "required|$rule[$loginWith]",
+            'phone_email' => "required|$rule",
             'password' => 'min:6'
         ];
+    }
+
+    /**
+     * Get custom attributes for validator errors.
+     *
+     * @return array
+     */
+    public function attributes()
+    {
+        $attributes = [
+            'phone_email' => 'Email/Whatsapp'
+        ];
+        if (isEmail($this->phone_email)) {
+            $attributes['phone_email'] = 'Email';
+        } else if (isPhoneNumber($this->phone_email)) {
+            $attributes['phone_email'] = 'Whatsapp';
+        }
+        return $attributes;
     }
 }

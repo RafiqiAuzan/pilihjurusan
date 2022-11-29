@@ -15,7 +15,10 @@
     </x-atoms.button>
     <livewire:sample />
 
-    <p>Logged In</p>
-
+    @auth
+        <p>Logged In</p>
+    @else
+        <p>Belum Login</p>
+    @endauth
 
 </x-layouts.full-row>

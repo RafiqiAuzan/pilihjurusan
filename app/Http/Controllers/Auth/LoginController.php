@@ -19,28 +19,31 @@ class LoginController extends Controller
     }
 
     /**
-    * Handle an authentication attempt.
-    *
-    * @param  \Illuminate\Http\Request  $request
-    //  * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
-    */
+     * Handle an authentication attempt.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
+     */
     public function authenticate(LoginRequest $request)
     {
-        $validated = $request->validated();
-        return $validated;
-        // $credentials = $request->validate([
-        //     'email' => ['required', 'email'],
-        //     'password' => ['required'],
-        // ]);
+        $credentials = $request->validated();
+        $loginMethod = $request->attributes()['phone_email'];
 
-        // if (Auth::attempt($credentials)) {
-        //     $request->session()->regenerate();
+        if (isEmail($credentials['phone_email'])) {
+            $credentials['email'] = $credentials['phone_email'];
+        } else {
+            $credentials['phone_number'] = $credentials['phone_email'];
+        }
+        unset($credentials['phone_email']);
 
-        //     return redirect()->intended('/');
-        // }
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
 
-        // return back()->withErrors([
-        //     'email' => 'The provided credentials do not match our records.',
-        // ])->onlyInput('email');
+            return redirect()->intended('/');
+        }
+
+        return back()->withInput()->withErrors([
+            'phone_email' => __("$loginMethod atau Kata Sandi Salah")
+        ]);
     }
 }

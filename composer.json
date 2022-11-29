@@ -18,8 +18,10 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "livewire/livewire": "^2.10",
+        "propaganistas/laravel-phone": "^4.4",
         "rappasoft/laravel-livewire-tables": "^2.8",
-        "spatie/laravel-csp": "^2.8"
+        "spatie/laravel-csp": "^2.8",
+        "stevebauman/location": "^6.5"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -36,15 +38,16 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "app/Helpers/view.php",
+            "app/Helpers/form.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
-        },
-        "files": [
-            "app/Helpers/view.php"
-        ]
+        }
     },
     "scripts": {
         "post-autoload-dump": [

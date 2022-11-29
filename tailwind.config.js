@@ -2,6 +2,9 @@ module.exports = {
     content: ["./resources/**/*.blade.php", "./resources/**/*.js"],
     theme: {
         colors: {
+            inherit: "inherit",
+            current: "currentColor",
+            transparent: "transparent",
             dark: {
                 100: "#777879",
                 200: "#616263",

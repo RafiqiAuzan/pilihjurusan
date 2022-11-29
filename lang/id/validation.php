@@ -44,7 +44,7 @@ return [
     'distinct' => ':Attribute memiliki nilai yang duplikat.',
     'doesnt_end_with' => ':Attribute tidak boleh diakhiri oleh: :values.',
     'doesnt_start_with' => ':Attribute tidak boleh diawali oleh: :values.',
-    'email' => ':Attribute harus berupa alamat surel yang valid.',
+    'email' => 'Alamat :attribute tidak valid.',
     'ends_with' => ':Attribute harus diakhiri dengan: :values.',
     'enum' => 'Opsi :attribute terpilih tidak valid.',
     'exists' => ':Attribute yang dipilih tidak valid.',
@@ -93,10 +93,10 @@ return [
     'mimes' => ':Attribute harus dokumen berjenis : :values.',
     'mimetypes' => ':Attribute harus berupa file bertipe: :values.',
     'min' => [
-        'numeric' => ':Attribute harus minimal :min.',
-        'file' => ':Attribute harus minimal :min kilobytes.',
-        'string' => ':Attribute harus minimal :min karakter.',
-        'array' => ':Attribute harus minimal :min item.',
+        'numeric' => ':Attribute minimal harus :min.',
+        'file' => ':Attribute minimal harus :min kilobytes.',
+        'string' => ':Attribute minimal harus :min karakter.',
+        'array' => ':Attribute minimal harus :min item.',
     ],
     'min_digits' => ':Attribute harus memiliki setidaknya :min digit.',
     'multiple_of' => ':Attribute harus kelipatan :value.',
@@ -110,6 +110,7 @@ return [
         'symbols' => ':Attribute must contain at least one symbol.',
         'uncompromised' => ':Attribute pernah mengalami kebocoran data. Pilih :attribute yang berbeda.',
     ],
+    'phone' => ':Attribute tidak valid.',
     'present' => ':Attribute wajib ada.',
     'prohibited' => ':Attribute tidak diterima.',
     'prohibited_if' => ':Attribute tidak diterima ketika :other bernilai :value.',
@@ -167,7 +168,7 @@ return [
     */
 
     'attributes' => [
-        'phone_email' => 'Email/Whatsapp'
+        'password' => 'Kata Sandi'
     ],
 
 ];
