@@ -14,7 +14,7 @@
                     </div>
                     <div class="flex flex-col items-start gap-5 max-w-5xl" height="540px">
                         <div class="flex flex-col justify-center items-center isolate max-w-5xl" height="540px">
-                            <x-atoms.youtube src="https://www.youtube.com/watch?v=k-Pi5ZMxHWY" />
+                            <x-atoms.youtube src="https://www.youtube.com/embed/8Ea4oq8qFtM" />
                         </div>
                     </div>
                 </div>
