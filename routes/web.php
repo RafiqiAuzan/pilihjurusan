@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('pages.home');
 // });
 Route::get('/', function () {
-    return view('pages.home');
+    return view('pages.partner');
 });
 Route::get('/', function () {
     return view('pages.home-benefit');
