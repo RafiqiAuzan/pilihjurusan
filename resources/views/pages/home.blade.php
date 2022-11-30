@@ -266,17 +266,17 @@
               </div>
             <div class="container p-4 mx-auto">
                 <div class="grid grid-cols-1 pt-5 md:grid-cols-2 xl:grid-cols-3 px-14">
-            <div class="p-3  border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300" >
+            <div class="p-3  border-solid shadow-lg rounded-3xl bg-light-100 border-light-300" >
                 <div class="mb-5">
                     <img src="{{ asset('img/landing/card-1.png')}}" alt="Frame">
                 </div>
             </div>               
-            <div class="p-3 border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300" >
+            <div class="p-3 border-solid shadow-lg rounded-3xl bg-light-100 border-light-300" >
                 <div class="mb-5">
                     <img src="{{ asset('img/landing/card-2.png')}}" alt="Frame">
                 </div>
             </div>
-            <div class="p-3 border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300" >
+            <div class="p-3 border-solid shadow-lg rounded-3xl bg-light-100 border-light-300" >
                 <div class="mb-3">
                     <img src="{{ asset('img/landing/card-3.png')}}" alt="Frame">
                 </div>
@@ -294,27 +294,27 @@
                   <h2 class="font-normal text-base-500">Layanan kami telah digunakan oleh banyak mitra</h2>
               </div>
                 <div class="grid grid-cols-1 pt-5 md:grid-cols-2 xl:grid-cols-5 px-14">
-            <div class="p-3 border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300" >
+            <div class="p-3 border-solid shadow-lg  rounded-3xl bg-light-100 border-light-300" >
                 <div class="mb-5">
                     <img src="{{ asset('img/landing/card-partner1.png')}}" alt="Frame">
                 </div>  
             </div>
-            <div class="p-3 border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300" >
+            <div class="p-3 border-solid shadow-lg  rounded-3xl bg-light-100 border-light-300" >
                 <div class="mb-5">
                     <img src="{{ asset('img/landing/card-partner2.png')}}" alt="Frame">
                 </div>  
             </div>
-            <div class="p-3 border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300" >
+            <div class="p-3 border-solid shadow-lg  rounded-3xl bg-light-100 border-light-300" >
                 <div class="mb-5">
                     <img src="{{ asset('img/landing/card-partner1.png')}}" alt="Frame">
                 </div>  
             </div>
-            <div class="p-3 border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300" >
+            <div class="p-3 border-solid shadow-lg  rounded-3xl bg-light-100 border-light-300" >
                 <div class="mb-5">
                     <img src="{{ asset('img/landing/card-partner2.png')}}" alt="Frame">
                 </div>  
             </div>
-            <div class="p-3 border-solid shadow-lg p-9 rounded-3xl bg-light-100 border-light-300" >
+            <div class="p-3 border-solid shadow-lg  rounded-3xl bg-light-100 border-light-300" >
                 <div class="mb-5">
                     <img src="{{ asset('img/landing/card-partner3.png')}}" alt="Frame">
                 </div>  
