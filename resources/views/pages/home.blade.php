@@ -1,4 +1,29 @@
-<x-layouts.full-rows title="Aplikasi Tes Psikologi Terbaik" class="text-center">
+<x-layouts.full-rows title="Aplikasi Tes Psikologi Terbaik">
+{{-- Hero Landing --}}
+<section class="bg-base-100 pt-[72px]">
+    <div class="container mx-auto">
+        <div>
+            <div class="flex items-center min-h-[37rem]">
+                <div class="content-center grow">
+                    <h1 class="py-4 text-xl md:text-6xl"><strong>#PilihYangCocok</strong></h1>
+                    <p class="text-base-600 max-w-[35rem]">Bersama Pilih Jurusan yang siap membantu kamu memilih jurusan dan karier sesuai minat dan bakatmu.</p>
+                    <x-atoms.button class="mt-7"> Coba Gratis</x-atoms.button>
+                </div>
+                <div class="">
+                    <img src="{{ asset('img/landing/hero.svg')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- Promo Card --}}
+<section class="bg-base-100">
+    <div class="container py-10 mx-auto">
+        <div class="bg-light-100 rounded-[1.5rem] text-center p-10 py-24"><strong class="text-xl">Promo Card</strong></div>
+    </div>
+</section>
+
 
     {{-- Section activities --}}
      <section id="aktivitas " class="w-full h-full ">
