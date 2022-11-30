@@ -29,6 +29,8 @@ class LoginController extends Controller
         $credentials = $request->validated();
         $loginMethod = $request->attributes()['phone_email'];
 
+        $credentials['phone_email'] = convertToE164($credentials['phone_email']);
+
         if (isEmail($credentials['phone_email'])) {
             $credentials['email'] = $credentials['phone_email'];
         } else {

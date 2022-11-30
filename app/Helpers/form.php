@@ -1,5 +1,6 @@
 <?php
 use Illuminate\Support\Facades\App;
+use Propaganistas\LaravelPhone\PhoneNumber;
 
 if (!function_exists('isEmail')) {
     /**
@@ -23,7 +24,7 @@ if (!function_exists('isPhoneNumber')) {
      */
     function isPhoneNumber($input)
     {
-        return $input[0] ?? null === '+';
+        return convertToE164($input)[0] ?? null === '+';
     }
 }
 
@@ -39,6 +40,19 @@ if (!function_exists('getPhoneRule')) {
             return 'auto,mobile';
         }
         return 'lenient';
+    }
+}
+
+if (!function_exists('convertToE164')) {
+    /**
+     * Convert phone number to E164 format
+     * 
+     * @param string|int $phoneNumber
+     * @return string
+     */
+    function convertToE164($phoneNumber)
+    {
+        return (string) PhoneNumber::make($phoneNumber, getCountryCode());
     }
 }
 ?>

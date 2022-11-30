@@ -13,7 +13,6 @@
     <x-atoms.button size="lg" status="outline" class="mx-auto my-2">
         <i class="bi bi-arrow-right-circle-fill"></i> Submit
     </x-atoms.button>
-    <livewire:sample />
 
     @auth
         <p>Logged In</p>
