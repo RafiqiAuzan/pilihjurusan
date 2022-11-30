@@ -15,7 +15,10 @@ class PilihJurusanPolicy extends Policy
         // Base Directives
         $this
             ->addDirective(Directive::BASE, Keyword::SELF)
-            ->addDirective(Directive::CONNECT, Keyword::SELF)
+            ->addDirective(Directive::CONNECT, [
+                Keyword::SELF,
+                'https://ka-f.fontawesome.com'
+            ])
             ->addDirective(Directive::DEFAULT , Keyword::SELF)
             ->addDirective(Directive::FORM_ACTION, Keyword::SELF)
             ->addDirective(Directive::IMG, [Keyword::SELF, 'source.unsplash.com', 'images.unsplash.com'])
@@ -24,16 +27,16 @@ class PilihJurusanPolicy extends Policy
             ->addDirective(Directive::SCRIPT, [
                 Keyword::SELF,
                 'unsafe-eval',
+                'https://kit.fontawesome.com'
             ])
             ->addDirective(Directive::STYLE, [
                 Keyword::SELF,
                 'https://fonts.googleapis.com/',
-                'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css'
+                'https://ka-f.fontawesome.com/releases/v6.2.1/css/free.min.css',
             ])
             ->addDirective(Directive::FONT, [
                 Keyword::SELF,
                 'https://fonts.gstatic.com',
-                'https://cdn.jsdelivr.net',
             ]);
 
         // Non Production or Staging Directives
