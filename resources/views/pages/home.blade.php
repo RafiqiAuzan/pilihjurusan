@@ -1,4 +1,5 @@
 <x-layouts.full-rows title="Aplikasi Tes Psikologi Terbaik">
+<x-atoms.navs.homenavbar/>
 {{-- Hero Landing --}}
 <section class="bg-base-100 pt-[72px]">
     <div class="container mx-auto">
@@ -26,8 +27,8 @@
 
 
     {{-- Section activities --}}
-     <section id="aktivitas " class="w-full h-full ">
-        <div class="mx-auto">
+     <section id="aktivitas " class="">
+        <div class="mx-auto w-full h-full bg-[#F9F7EA]">
             <h3 class="mt-6 mb-6 text-3xl font-bold text-center text-base-800">Yang terbaru dari kami</h3>
             <p class="text-lg font-normal text-center text-base-600">Cerita baru, kegiatan, dan keseruan lainnya, Baca Blog terbaru kami disini.</p>
 
