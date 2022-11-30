@@ -14,5 +14,5 @@
     <x-atoms.cornerwidget/>
 
 
-    <x-atoms.navs.homefooter/>
+    {{-- <x-atoms.navs.homefooter/> --}}
   </x-layouts.base>
