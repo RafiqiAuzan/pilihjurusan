@@ -23,3 +23,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home-activities');
 });
+
+Route::get('/blog', function () {
+    return view('pages.blog');
+});
+
+Route::get('/hero', function () {
+    return view('pages.home-hero');
+});
