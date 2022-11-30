@@ -26,6 +26,16 @@ class PilihJurusanPolicy extends Policy
             'https://fonts.gstatic.com',
             'https://cdn.jsdelivr.net',
         ];
+        $media = [
+            Keyword::SELF,
+            'https://*.youtube.com',
+            'https://youtu.be',
+        ];
+        $frame = [
+            Keyword::SELF,
+            'https://*.youtube.com',
+            'https://youtu.be',
+        ];
         // Base Directives
         $this
             ->addDirective(Directive::BASE, Keyword::SELF)
@@ -33,7 +43,8 @@ class PilihJurusanPolicy extends Policy
             ->addDirective(Directive::DEFAULT, Keyword::SELF)
             ->addDirective(Directive::FORM_ACTION, Keyword::SELF)
             ->addDirective(Directive::IMG, [Keyword::SELF, 'source.unsplash.com', 'images.unsplash.com'])
-            ->addDirective(Directive::MEDIA, Keyword::SELF)
+            ->addDirective(Directive::MEDIA, $media)
+            ->addDirective(Directive::FRAME, $frame)
             ->addDirective(Directive::OBJECT, Keyword::NONE)
             ->addDirective(Directive::SCRIPT, $scripts)
             ->addDirective(Directive::STYLE,  $styles)
