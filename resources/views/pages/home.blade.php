@@ -1,6 +1,5 @@
 <x-layouts.full-rows title="Aplikasi Tes Psikologi Terbaik">
 {{-- Section Navbar --}}
-<x-atoms.navs.homenavbar/>
 
 {{-- Hero Landing --}}
 <section class="bg-base-100 pt-[72px]">
