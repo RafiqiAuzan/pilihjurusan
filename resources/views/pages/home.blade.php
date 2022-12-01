@@ -1,33 +1,33 @@
 <x-layouts.full-rows title="Aplikasi Tes Psikologi Terbaik">
 {{-- Section Navbar --}}
 
-{{-- Hero Landing --}}
-<section class="bg-base-100 pt-[72px] px-10">
-    <div class="container mx-auto">
-        <div>
-            <div class="flex items-center min-h-[37rem]">
-                <div class="content-center grow">
-                    <h1 class="font-display font-extrabold py-4 text-xl md:text-7xl"><strong>#PilihYangCocok</strong></h1>
-                    <p class="font-body font-normal text-base-600 max-w-[35rem]">Bersama Pilih Jurusan yang siap membantu kamu memilih jurusan dan karier sesuai minat dan bakatmu.</p>
-                    <x-atoms.button class="bi bi-arrow-right-circle-fill mt-7"> Coba Gratis</x-atoms.button>
-                </div>
-                <div class="">
-                    <img class="" src="{{ URL::to('/img/landing/hero.svg') }}">
-                </div>
+{{-- Promo Card and Hero --}}
+<section class="grid">
+    <section class="bg-base-100 pt-[72px] lg:pt-0 lg:order-last">
+        <div class="container py-10 lg:px-20 mx-auto">
+            <div class="lg:flex mx-auto justify-between text-center bg-gradient-to-r from-base-100 via-warning/40 to-base-100 p-5 lg:py-14">
+                <p class="lg:text-xl text-[13px] mx-auto"><strong>Ayo dapatkan tawaran menarik dari kami!</strong></p>
+                <button class="mx-auto font-body font-bold lg:text-xl text-sm text-primary-500 lg:mt-0 mt-[14px]">50% Discount</button>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-{{-- Promo Card --}}
-
-<section class="bg-base-100">
-    <div class="container py-10 px-20 mx-auto ">
-        <div class=" container mx-auto flex justify-between text-center bg-gradient-to-r from-base-100 via-warning/25 to-base-100 rounded-[1.5rem] p-10 py-14">
-            <strong class="text-xl mx-auto">Ayo dapatkan tawaran menarik dari kami!</strong>
-            <button class="font-body font-bold text-xl  mx-auto text-primary-500">50% Discount</button>
+    <section class="bg-base-100 lg:pt-[72px]">
+        <div class="container mx-auto">
+            <div class="lg:flex items-center min-h-[37rem]">
+                <div class="order-2 ">
+                    <img class="mx-auto" src="{{ URL::to('/img/landing/hero.svg') }}">
+                </div>
+                <div class="content-center lg:grow">
+                    <h1 class="font-display font-extrabold py-4 text-4xl md:text-7xl"><strong>#PilihYangCocok</strong></h1>
+                    <p class="font-body font-normal text-base-600 max-w-[35rem] lg:text-base text-sm">Bersama Pilih Jurusan yang siap membantu kamu memilih jurusan dan karier sesuai minat dan bakatmu.</p>
+                    <x-atoms.button class="lg:w-auto w-full mt-7">
+                        <i class="bi bi-arrow-right-circle-fill"></i> Coba Gratis
+                        </x-atoms.button>
+                </div>               
+            </div>
         </div>
-    </div>
+    </section>
 </section>
 
 
