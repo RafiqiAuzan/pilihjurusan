@@ -15,6 +15,12 @@ class Landing extends Controller
      */
     public function __invoke(Request $request)
     {
+<<<<<<< HEAD
+        //
+    }
+}
+=======
         return view('pages.home');
     }
 }
+>>>>>>> cee51691f87983de8083ec0d618b1e94208cda22
