@@ -1,24 +1,36 @@
 @props([
     'size' => 'default',
     'status' => 'solid',
-    'tag' => empty($href) ? 'button' : 'href',
+    'tag' => empty($href) ? 'button' : 'a',
     'class' => '',
 ])
-<{{ $tag }} @class([
-    'flex flex-row justify-center items-center border border-solid rounded-full font-bold transition',
 
-    'text-sm leading-6 py-4 px-16 gap-4' => $size == 'lg',
-    'text-sm leading-5 py-3 px-14 gap-3' => $size == 'default',
-    'text-xs leading-4 py-2 px-10 gap-2' => $size == 'sm',
-    'text-xs leading-4 py-2 px-9 gap-2' => $size == 'xs',
 
-    'bg-primary-500 border-primary-500 text-base-100 hover:bg-primary-700' =>
+<{{ $tag }} {{ $attributes }} @class([
+    ' rounded-full font-bold transition',
+
+    'flex flex-row justify-center items-center' => $tag == 'button',
+    'inline-block' => $tag == 'a',
+
+    'text-base leading-6 py-4 px-16 gap-4' => $size == 'lg',
+    'text-sm leading-5 py-[14px] px-14 gap-[14px]' => $size == 'default',
+    'text-xs leading-4 py-[9px] px-9 gap-[9px]' => $size == 'sm',
+    'text-xs leading-4 py-[6px] px-6 gap-[6px]' => $size == 'xs',
+
+    'text-base leading-6 p-4 gap-4' => $size == 'icon-lg',
+    'text-sm leading-5 p-[14px] gap-[14px]' => $size == 'icon-default',
+    'text-xs leading-4 p-[9px] gap-[9px]' => $size == 'icon-sm',
+    'text-xs leading-4 p-[6px] gap-[6px]' => $size == 'icon-xs',
+
+    'border border-solid bg-primary-500 border-primary-500 text-base-100 hover:bg-primary-700' =>
         $status == 'solid',
-    'bg-light-100 border-primary-500 text-primary-500 hover:bg-primary-500 hover:bg-opacity-10' =>
+    'border border-solid bg-light-100 border-primary-500 text-primary-500 hover:bg-primary-500 hover:bg-opacity-10' =>
         $status == 'outline',
-    'bg-light-300 border-light-200 text-base-500' => $status == 'disabled',
+    'text-primary-500 !p-0 !gap-0' => $status == 'transparent',
+    'border border-solid bg-light-300 border-light-200 text-base-500' =>
+        $status == 'disabled',
 
     $class,
-]) @disabled($status == 'disabled') {{ $attributes }}>
+]) @disabled($status == 'disabled')>
     {{ $slot }}
-</{{ $tag }}>
+    </{{ $tag }}>

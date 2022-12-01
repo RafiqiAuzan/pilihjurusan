@@ -12,53 +12,54 @@ class PilihJurusanPolicy extends Policy
 {
     public function configure()
     {
-        $styles = [
-            Keyword::SELF,
-            'https://fonts.googleapis.com/',
-            'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css'
-        ];
-        $scripts = [
-            Keyword::SELF,
-            'unsafe-eval',
-        ];
-        $fonts = [
-            Keyword::SELF,
-            'https://fonts.gstatic.com',
-            'https://cdn.jsdelivr.net',
-        ];
-        $media = [
-            Keyword::SELF,
-            'https://*.youtube.com',
-            'https://youtu.be',
-        ];
-        $frame = [
-            Keyword::SELF,
-            'https://*.youtube.com',
-            'https://youtu.be',
-        ];
         // Base Directives
         $this
             ->addDirective(Directive::BASE, Keyword::SELF)
-            ->addDirective(Directive::CONNECT, Keyword::SELF)
-            ->addDirective(Directive::DEFAULT, Keyword::SELF)
+            ->addDirective(Directive::CONNECT, [
+                Keyword::SELF,
+                'https://ka-f.fontawesome.com'
+            ])
+            ->addDirective(Directive::DEFAULT , Keyword::SELF)
             ->addDirective(Directive::FORM_ACTION, Keyword::SELF)
             ->addDirective(Directive::IMG, [Keyword::SELF, 'source.unsplash.com', 'images.unsplash.com'])
-            ->addDirective(Directive::MEDIA, $media)
-            ->addDirective(Directive::FRAME, $frame)
+            ->addDirective(Directive::MEDIA, [
+                Keyword::SELF,
+                'https://*.youtube.com',
+                'https://youtu.be',
+            ])
+            ->addDirective(Directive::FRAME, [
+                Keyword::SELF,
+                'https://*.youtube.com',
+                'https://youtu.be',
+            ])
             ->addDirective(Directive::OBJECT, Keyword::NONE)
-            ->addDirective(Directive::SCRIPT, $scripts)
-            ->addDirective(Directive::STYLE,  $styles)
-            ->addDirective(Directive::FONT, $fonts)
-            ->addNonceForDirective(Directive::SCRIPT)
-            ->addNonceForDirective(Directive::STYLE);
-        // Local Directives
-        if (config('app.env') == 'local') {
+            ->addDirective(Directive::SCRIPT, [
+                Keyword::SELF,
+                'unsafe-eval',
+                'https://kit.fontawesome.com'
+            ])
+            ->addDirective(Directive::STYLE, [
+                Keyword::SELF,
+                'https://fonts.googleapis.com/',
+                'https://ka-f.fontawesome.com/releases/v6.2.1/css/free.min.css',
+            ])
+            ->addDirective(Directive::FONT, [
+                Keyword::SELF,
+                'https://fonts.gstatic.com',
+            ]);
+
+        // Non Production or Staging Directives
+        $env = config('app.env');
+        if ($env !== 'production' && $env !== 'staging') {
             $host = preg_replace("(^https?://)", "", config('app.url'));
             $this
                 ->addDirective(Directive::CONNECT, "wss://$host:5173")
-                ->addDirective(Directive::STYLE, ["$host:5173",])
+                ->addDirective(Directive::STYLE, ["$host:5173", 'unsafe-inline'])
                 ->addDirective(Directive::IMG, ["$host:5173",])
-                ->addDirective(Directive::SCRIPT, ["$host:5173"]);
+                ->addDirective(Directive::SCRIPT, ["$host:5173", 'unsafe-inline']);
+        } else {
+            $this->addNonceForDirective(Directive::SCRIPT)
+                ->addNonceForDirective(Directive::STYLE);
         }
     }
 

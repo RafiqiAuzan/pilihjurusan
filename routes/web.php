@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\TestController;
-use Carbon\Carbon;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,16 +18,24 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages.home');
+})->name('home');
+
+Route::middleware('guest')->group(function () {
+    Route::get('login', [LoginController::class, 'index'])->name('login');
+    Route::post('login', [LoginController::class, 'authenticate']);
 });
-// Route::get('/', function () {
-//     return view('pages.partner');
-//     return view('pages.footer');
-// });
-// Route::get('/', function () {
-//     return view('pages.home-benefit');
-// });
 
+Route::middleware('auth')->group(function () {
+    Route::get(
+        'logout',
+        function (Request $request) {
+            Auth::logout();
 
-// Route::get('/hero', function () {
-//     return view('pages.home-hero');
-// });
+            $request->session()->invalidate();
+
+            $request->session()->regenerateToken();
+
+            return redirect()->to('login');
+        }
+    );
+});

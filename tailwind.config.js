@@ -4,6 +4,9 @@ module.exports = {
     theme: {
         colors: {
             green: colors.green,
+            inherit: "inherit",
+            current: "currentColor",
+            transparent: "transparent",
             dark: {
                 100: "#1D1E1F",
                 200: "#343536",
