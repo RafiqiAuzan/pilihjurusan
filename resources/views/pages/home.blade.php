@@ -30,8 +30,6 @@
 
 {{-- Fun Fact --}}
 
-
-{{-- Section benefit --}}
 {{-- Section benefit --}}
 <section id="benefit">
     <div class="flex flex-col text-center bg-secondary-100" >
@@ -354,67 +352,6 @@
     </section>
 
 {{-- Footer --}}
-    <section>
-      <footer class="w-full h-full bg-dark-200 ">
-        <div class="container px-10 py-10 mx-auto">
-          <div class="w-full">
-            <div class="mb-12">
-              <img src="{{ asset('img/global/logo.webp')}}" alt="Logo Pilih Jurusan">
-            </div>
-          </div>
-          <div class="grid grid-cols-2 lg:grid-cols-5 lg:pr-20">
-            <div class="grid">
-              <div class="mb-4 grow">
-                <h1 class="mb-1 text-lg font-bold text-secondary-500 font-display">Perusahaan</h1>
-                <ul class="text-xs text-light-200 font-body">
-                  <li class="py-1"><a href="" class="hover:text-secondary-500">Tentang</a></li>
-                  <li class="py-1"><a href="" class="hover:text-secondary-500">Produk</a></li>
-                  <li class="py-1"><a href="" class="hover:text-secondary-500">Kerjasama</a></li>
-                  <li class="py-1"><a href="" class="hover:text-secondary-500">Karier</a></li>
-                  <li class="py-1"><a href="" class="hover:text-secondary-500">Lokasi</a></li>
-                </ul>
-              </div>
-          </div>
-            <div class="mb-4 grow">
-              <h1 class="mb-1 text-lg font-bold text-secondary-500 font-display">Layanan</h1>
-              <ul class="py-1 text-xs text-light-200 font-body">
-                <li class="py-1"><a href="" class="hover:text-secondary-500">Workshop</a></li>
-                <li class="py-1"><a href="" class="hover:text-secondary-500">Test Psikologi</a></li>
-                <li class="py-1"><a href="" class="hover:text-secondary-500">Coaching</a></li>
-                <li class="py-1"><a href="" class="hover:text-secondary-500">Webinar</a></li>
-              </ul>
-            </div>
-            <div class="mb-4 grow">
-              <h1 class="mb-1 text-lg font-bold text-secondary-500 font-display">Lainnya</h1>
-              <ul class="text-xs text-light-200 font-body">
-                <li class="py-1"><a href="" class="hover:text-secondary-500">Kegiatan</a></li>
-                <li class="py-1"><a href="" class="hover:text-secondary-500">Artikel</a></li>
-              </ul>
-            </div>
-            <div class="mb-4 grow">
-              <h1 class="mb-1 text-lg font-bold text-secondary-500 font-display">Bantuan</h1>
-              <ul class="text-xs text-light-200 font-body">
-                <li class="py-1"><a href="" class="hover:text-secondary-500">Kebijakan Privasi</a></li>
-                <li class="py-1"><a href="" class="hover:text-secondary-500">Hubungi Kami</a></li>
-                <li class="py-1"><a href="" class="hover:text-secondary-500">Pertanyaan</a></li>
-              </ul>
-            </div>
-            <div class="text-light-100">
-              <h1 class="mb-1 text-lg font-bold text-secondary-500 font-display">Ikuti Kami</h1>
-              <ul class="flex">
-                <a href="https://www.facebook.com/pilihjurusan.id/?_rdc=1&_rdr"><li><i class="px-2 bi-facebook hover:text-secondary-500"></i></li></a>
-                <a href="https://www.tiktok.com/@pilihjurusan.id/?"><li><i class="px-2 bi-tiktok hover:text-secondary-500"></i></li></a>
-                <a href="https://www.instagram.com/pilihjurusan.id/"><li><i class="px-2 bi-instagram hover:text-secondary-500 "></i></li></a>
-                <a href="https://twitter.com/pilihjurusan_id"><li><i class="px-2 bi-twitter hover:text-secondary-500"></i></li></a>
-                <a href="https://www.youtube.com/channel/UCCYChKuM_xasaGUR874GTfg?themeRefresh=1"><li><i class="px-2 bi-youtube hover:text-secondary-500"></i></li></a>
-                <a href="https://www.linkedin.com/company/pilihjurusan/"><li><i class="px-2 bi-linkedin hover:text-secondary-500"></i></li></a>
-              </ul>
-            </div>
-          </div>
-          <div class="w-full mt-8 text-sm border-t text-base-200 font-display">
-            <p class="mt-2">© 2020 - 2022 Pilihjurusan | Merek dagang dari PT. Pilihanmu Indonesia Jaya</p>
-          </div>
-        </div>
-      </footer>
-    </section>
+<x-atoms.navs.homefooter/>
+
 </x-layouts.full-row>
