@@ -32,7 +32,7 @@
 
 
 {{-- Section benefit --}}
-<div class="flex flex-col text-center bg-se bg-[#F9F7EA]"" >
+<div class="flex flex-col text-center bg-se bg-[#F9F7EA]">
         <div class="grid grid-cols-6 mt-12">
             <h1 class="col-span-4 col-start-2 p-6 text-4xl font-bold">Keuntungan yang bisa kamu dapat</h1>
             <p class="justify-center col-span-4 col-start-2 text-base-600">Kami Pilih Jurusan berkomitmen memajukan Pendidikan Indonesia melalui beberapa layanan dan produk yang cukup menarik, demi mewujudkan Indonesia yang maju dan Indonesia yang sejahtera</p>
