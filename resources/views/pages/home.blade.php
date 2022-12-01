@@ -2,7 +2,7 @@
 {{-- Section Navbar --}}
 
 {{-- Hero Landing --}}
-<section class="bg-base-100 pt-[72px]">
+<section class="bg-base-100 pt-[72px] px-10">
     <div class="container mx-auto">
         <div>
             <div class="flex items-center min-h-[37rem]">
@@ -32,8 +32,8 @@
 
 
 {{-- Section benefit --}}
-<div class="flex flex-col text-center bg-se bg-secondary-100" >
-        <div class="grid grid-cols-6">
+<div class="flex flex-col text-center bg-se bg-[#F9F7EA]"" >
+        <div class="grid grid-cols-6 mt-12">
             <h1 class="col-span-4 col-start-2 p-6 text-4xl font-bold">Keuntungan yang bisa kamu dapat</h1>
             <p class="justify-center col-span-4 col-start-2 text-base-600">Kami Pilih Jurusan berkomitmen memajukan Pendidikan Indonesia melalui beberapa layanan dan produk yang cukup menarik, demi mewujudkan Indonesia yang maju dan Indonesia yang sejahtera</p>
         </div>
@@ -195,8 +195,8 @@
 
     {{-- Section activities --}}
      <section id="aktivitas " class="">
-        <div class="mx-auto w-full h-full bg-[#F9F7EA]">
-            <h3 class="mt-6 mb-6 text-3xl font-bold text-center text-base-800">Yang terbaru dari kami</h3>
+        <div class="mx-auto w-full h-full bg-[#F9F7EA] p-16">
+            <h3 class="mb-6 text-3xl font-bold text-center text-base-800">Yang terbaru dari kami</h3>
             <p class="text-lg font-normal text-center text-base-600">Cerita baru, kegiatan, dan keseruan lainnya, Baca Blog terbaru kami disini.</p>
 
             <div class="container mx-auto">
@@ -214,14 +214,14 @@
             </div>
 
 
-            <div class="grid grid-cols-1 gap-3 px-4 pt-5 pb-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                <div class="mt-5 overflow-hidden shadow-lg rounded-xl bg-light-100 lg:block sm:hidden">
+            <div class="grid grid-cols-1 gap-5 px-4 pt-5 pb-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div class= "mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100 lg:block sm:hidden">
                     <div class="relative h-[200px]">
                         <img class="absolute w-full h-full grayscale" src="https://source.unsplash.com/360x200?programming" alt="">
                         <div class="absolute bottom-0 w-full overflow-hidden text-center bg-dark-100/[.7] "><strong class="text-light-100">Kuota habis</strong></div>
                     </div>
                     <div class="p-5">
-                        <span class="px-6 py-1 font-semibold border-2 rounded-full border-primary-500 text-primary-500">Kegiatan</span>
+                        <span class="px-6 py-1 rounded-full font-semibold border-2 border-primary-500 text-primary-500">Kegiatan</span>
                         <h5 class="mt-4 mb-2 text-2xl font-bold tracking-tight text-base-900">Keseruan Belajar Di Pilih Jurusan</h5>
                         <p class="mb-3 font-normal text-gray-700">Sharing, curhat, dan bahkan bisa ngobrol prihal masalahmu dengan kakak coach profesional...</p>
                         <div><i class="pr-2 bi bi-calendar-week"></i> 20 Oktober - 31 Oktober 2022</div>
@@ -230,7 +230,7 @@
                         <a class="text-sm font-semibold  text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
                     </div>
                 </div>
-                <div class="mt-5 overflow-hidden rounded-lg shadow-lg bg-light-100">
+                <div class="mt-5 overflow-hidden rounded-2xl shadow-lg bg-light-100">
                     <div class="relative h-[200px]">
                         <img class="absolute w-full h-full grayscale" src="https://source.unsplash.com/360x200?programming" alt="">
                         <div class="absolute bottom-0 w-full overflow-hidden text-center bg-dark-100/[.7]"><strong class="text-light-100">Kuota habis</strong></div>
@@ -245,7 +245,7 @@
                         <a class="text-sm font-semibold  text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
                     </div>
                 </div>
-                <div class="mt-5 overflow-hidden rounded-lg shadow-lg bg-light-100">
+                <div class="mt-5 overflow-hidden rounded-2xl shadow-lg bg-light-100">
                     <div class="relative h-[200px]">
                         <img class="absolute w-full h-full" src="https://source.unsplash.com/360x200?programming" alt="">
                     </div>
@@ -258,7 +258,7 @@
                          <a class="text-sm font-semibold  text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
                     </div>
                 </div>
-                <div class="mt-5 overflow-hidden rounded-lg shadow-lg bg-light-100">
+                <div class="mt-5 overflow-hidden rounded-2xl shadow-lg bg-light-100">
                     <div class="relative h-[200px]">
                         <img class="absolute w-full h-full" src="https://source.unsplash.com/360x200?programming" alt="">
 
@@ -283,68 +283,57 @@
     <section>
     <div class="w-full h-full bg-[#FAF9F7] flex items-center justify-between">
         <div class="self-start py-16 text-left px-10 lg:text-center mx-auto">
-            <div class="mt-32">
-                <h1 class="font-bold text-base-800 text-4xl pb-5">Pilihjurusan Disukai Banyak Orang loh!</h1>
+            <div class="mt-20">
+                <h1 class="font-bold text-base-800 text-4xl pb-5">Pilih Jurusan Disukai Banyak Orang loh!</h1>
               </div>
               <div class=" font-body leading-6 ml-10w-full mx-auto font-bold lg:w-10/12 xl:w-9/12 pb-10">
                   <p class="font-normal text-base-500">Kami Pilih Jurusan berkomitmen memajukan Pendidikan Indonesia melalui beberapa layanan dan produk yang cukup menarik, demi mewujudkan Indonesia yang maju dan Indonesia yang sejahtera</p>
-              </div>
-            <div class="container p-4 mx-auto">
-                <div class="grid grid-cols-1 pt-5 md:grid-cols-2 xl:grid-cols-3 px-14">
-            <div class="p-3  border-solid shadow-lg rounded-3xl bg-light-100 border-light-300" >
-                <div class="mb-5">
-                    <img src="{{ asset('img/landing/card-1.png')}}" alt="Frame">
-                </div>
-            </div>               
-            <div class="p-3 border-solid shadow-lg rounded-3xl bg-light-100 border-light-300" >
-                <div class="mb-5">
-                    <img src="{{ asset('img/landing/card-2.png')}}" alt="Frame">
+            </div>
+            <div class="container px-10">
+                <div class="grid grid-cols-1 pt-5  lg:grid-cols-3">
+                    <div class="p-5 border-solid shadow-lg text-left rounded-3xl bg-light-100 border-light-300 mx-3 my-5">
+                        <div class="p-4">
+                            <img src="{{ asset('img/global/junaedi.webp')}}" alt="">
+                            <h1 class="font-display text-2xl text-base-800 font-bold py-2">Junaedi</h1>
+                            <p class="font-body text-base-600 text-xs">Bintang 5 untuk layanan yang telah aku dapatkan, karena aku menjadi tahu jurusan apa yang cocok untukku.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 border-solid shadow-lg text-left rounded-3xl bg-light-100 border-light-300 mx-3 my-5">
+                        <div class="p-4">
+                            <img src="{{ asset('img/global/tono.webp')}}" alt="">
+                            <h1 class="font-display text-2xl text-base-800 font-bold py-2">Tono Dwi Saputro</h1>
+                            <p class="font-body text-base-600 text-xs">Layanan yang dimilikinya sangat membantuku yang saat ini sedang kesulitan mencari jurusan.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 border-solid shadow-lg text-left rounded-3xl bg-light-100 border-light-300 mx-3 my-5">
+                        <div class="p-4">
+                            <img src="{{ asset('img/global/eka.webp')}}" alt="">
+                            <h1 class="font-display text-2xl text-base-800 font-bold py-2">Eka Nurjaya</h1>
+                            <p class="font-body text-base-600 text-xs">Luar Biasa, Mentornya sangar luar biasa ketika menjelaskan.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="p-3 border-solid shadow-lg rounded-3xl bg-light-100 border-light-300" >
-                <div class="mb-3">
-                    <img src="{{ asset('img/landing/card-3.png')}}" alt="Frame">
-                </div>
-            </div>
+        </div>
     </section>
 
     {{-- Section partner --}}
     <section>
     <div class="w-full h-full bg-[#FAF9F7] flex items-center space-between">
         <div class="self-start py-8 text-left px-10 lg:text-center mx-auto">
-            <div class="mt-32">
+            <div class="lg:mt-20 mt-10">
                 <h1 class="font-bold text-base-800 text-4xl pb-5">Mitra Yang Telah Bekerjasama</h1>
-              </div>
-              <div class=" font-body leading-6 ml-10w-full mx-auto font-bold lg:w-10/12 xl:w-9/12 pb-10">
+            </div>
+            <div class=" font-body leading-6 ml-10w-full mx-auto font-bold lg:w-10/12 xl:w-9/12 pb-10">
                   <h2 class="font-normal text-base-500">Layanan kami telah digunakan oleh banyak mitra</h2>
-              </div>
-                <div class="grid grid-cols-1 pt-5 md:grid-cols-2 xl:grid-cols-5 px-14">
-            <div class="p-3 border-solid shadow-lg  rounded-3xl bg-light-100 border-light-300" >
-                <div class="mb-5">
-                    <img src="{{ asset('img/landing/card-partner1.png')}}" alt="Frame">
-                </div>  
             </div>
-            <div class="p-3 border-solid shadow-lg  rounded-3xl bg-light-100 border-light-300" >
-                <div class="mb-5">
-                    <img src="{{ asset('img/landing/card-partner2.png')}}" alt="Frame">
-                </div>  
+            <div class="grid grid-cols-2 pt-5 md:grid-cols-1 xl:grid-cols-5 px-14">
+                <img src="{{ asset('img/landing/card-partner1.png')}}" alt="Frame">            
+                <img src="{{ asset('img/landing/card-partner2.png')}}" alt="Frame">
+                <img src="{{ asset('img/landing/card-partner1.png')}}" alt="Frame" class="lg:block hidden">
+                <img src="{{ asset('img/landing/card-partner2.png')}}" alt="Frame"  class="lg:block hidden">
+                <img src="{{ asset('img/landing/card-partner1.png')}}" alt="Frame"  class="lg:block hidden">
             </div>
-            <div class="p-3 border-solid shadow-lg  rounded-3xl bg-light-100 border-light-300" >
-                <div class="mb-5">
-                    <img src="{{ asset('img/landing/card-partner1.png')}}" alt="Frame">
-                </div>  
-            </div>
-            <div class="p-3 border-solid shadow-lg  rounded-3xl bg-light-100 border-light-300" >
-                <div class="mb-5">
-                    <img src="{{ asset('img/landing/card-partner2.png')}}" alt="Frame">
-                </div>  
-            </div>
-            <div class="p-3 border-solid shadow-lg  rounded-3xl bg-light-100 border-light-300" >
-                <div class="mb-5">
-                    <img src="{{ asset('img/landing/card-partner3.png')}}" alt="Frame">
-                </div>  
-            </div>   
-        </div>
     </section>
 
     {{-- Section Persuation --}}
