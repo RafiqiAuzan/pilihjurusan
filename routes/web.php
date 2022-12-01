@@ -22,6 +22,7 @@ Route::get('/', function () {
 Route::middleware('guest')->group(function () {
     Route::get('login', [LoginController::class, 'index'])->name('login');
     Route::post('login', [LoginController::class, 'authenticate']);
+    Route::get('lupa-kata-sandi', [LoginController::class, 'index'])->name('forgot-password');
 });
 
 Route::middleware('auth')->group(function () {
