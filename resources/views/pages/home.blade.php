@@ -3,16 +3,16 @@
 
 {{-- Promo Card and Hero --}}
 <section class="grid">
-    <section class="bg-base-100 pt-[72px] lg:pt-0 lg:order-last">
+    <section class="bg-base-100 pt-[80px] lg:pt-0 lg:order-last">
         <div class="container py-10 lg:px-20 mx-auto">
-            <div class="lg:flex mx-auto justify-between text-center bg-gradient-to-r from-base-100 via-warning/40 to-base-100 p-5 lg:py-14">
+            <div class="lg:flex mx-auto justify-between text-center bg-gradient-to-r from-base-100 via-warning/40 to-base-100 p-5 lg:py-12">
                 <p class="lg:text-xl text-[13px] mx-auto"><strong>Ayo dapatkan tawaran menarik dari kami!</strong></p>
                 <button class="mx-auto font-body font-bold lg:text-xl text-sm text-primary-500 lg:mt-0 mt-[14px]">50% Discount</button>
             </div>
         </div>
     </section>
 
-    <section class="bg-base-100 lg:pt-[72px]">
+    <section class="bg-base-100 lg:pt-[80px]">
         <div class="container mx-auto">
             <div class="lg:flex items-center min-h-[37rem]">
                 <div class="order-2 ">
@@ -24,7 +24,7 @@
                     <x-atoms.button class="lg:w-auto w-full mt-7">
                         <i class="bi bi-arrow-right-circle-fill"></i> Coba Gratis
                         </x-atoms.button>
-                </div>               
+                </div>              
             </div>
         </div>
     </section>
@@ -193,7 +193,7 @@
             <p class="text-lg font-normal text-center text-base-600">Cerita baru, kegiatan, dan keseruan lainnya, Baca Blog terbaru kami disini.</p>
 
             <div class="container mx-auto">
-                <div class="flex flex-cols justify-center gap-3 mt-7 sm:px-4">
+                <div class="flex flex-cols justify-center gap-3 mt-7">
                     <x-atoms.button size="default" status="solid" class="">
                         Terbaru
                     </x-atoms.button>
@@ -207,7 +207,7 @@
             </div>
 
 
-            <div class="grid grid-cols-1 gap-5 px-4 pt-5 pb-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <div class="grid grid-cols-1 gap-5 px-16 pt-5 pb-10 mx-aut sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 <div class= "mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100 lg:block sm:hidden">
                     <div class="relative h-[200px]">
                         <img class="absolute w-full h-full grayscale" src="https://source.unsplash.com/360x200?programming" alt="">
@@ -330,8 +330,8 @@
     </section>
 
     {{-- Section Persuation --}}
-    <section>
-      <div class="w-full h-full bg-[#FAF9F7] flex items-center justify-between">
+    <section class=" bg-[#FAF9F7]">
+        <div class="container mx-auto flex items-center justify-between">
           <div class="self-start py-16 text-left px-10 lg:text-center mx-auto">
               <div class="mt-32">
                   <h1 class="font-bold text-base-800 text-4xl pb-5">Menarik Bukan?</h1>
@@ -339,7 +339,7 @@
               <div class=" font-body leading-6 ml-10w-full mx-auto font-bold lg:w-10/12 xl:w-9/12 pb-10">
                   <p class="font-normal text-base-600">Tunggu apalagi? Yuk daftarkan dirimu untuk segera memulai perjalananmu dengan Pilih Jurusan!</p>
               </div>
-              <x-atoms.button size="lg" status="solid" class="mx-auto">
+              <x-atoms.button size="lg" status="solid" class="lg:w-auto lg:mx-auto w-full">
                   <i class="bi bi-arrow-right-circle-fill"></i> Daftar Sekarang
               </x-atoms.button>
           </div>
@@ -352,7 +352,7 @@
 {{-- Footer --}}
     <section>
       <footer class="w-full h-full bg-dark-200 ">
-        <div class="container mx-auto px-20 py-10">
+        <div class="container mx-auto px-10 py-10">
           <div class="w-full">
             <div class="mb-12">
               <img src="{{ asset('img/global/logo.webp')}}" alt="Logo Pilih Jurusan">
