@@ -1,4 +1,4 @@
-<x-layouts.full-rows title="Aplikasi Tes Psikologi Terbaik">
+<x-layouts.full-row title="Aplikasi Tes Psikologi Terbaik">
 {{-- Section Navbar --}}
 <x-atoms.navs.homenavbar/>
 
@@ -437,4 +437,4 @@
         </div>
       </footer>
     </section>
-</x-layouts.full-rows>
+</x-layouts.full-row>

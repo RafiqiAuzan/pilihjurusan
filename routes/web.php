@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\TestController;
-use Carbon\Carbon;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages.home');
+})->name('home');
+
+Route::middleware('guest')->group(function () {
+    Route::get('login', [LoginController::class, 'index'])->name('login');
+    Route::post('login', [LoginController::class, 'authenticate']);
+    Route::get('lupa-kata-sandi', [LoginController::class, 'index'])->name('forgot-password');
 });
 // Route::get('/', function () {
 //     return view('pages.partner');
@@ -31,3 +36,18 @@ Route::get('/', function () {
 // Route::get('/hero', function () {
 //     return view('pages.home-hero');
 // });
+
+Route::middleware('auth')->group(function () {
+    Route::get(
+        'logout',
+        function (Request $request) {
+            Auth::logout();
+
+            $request->session()->invalidate();
+
+            $request->session()->regenerateToken();
+
+            return redirect()->to('login');
+        }
+    );
+});
