@@ -1,9 +1,10 @@
 @props([
     'size' => 'default',
     'status' => 'solid',
+    'tag' => empty($href) ? 'button' : 'href',
     'class' => '',
 ])
-<button @class([
+<{{ $tag }} @class([
     'flex flex-row justify-center items-center border border-solid rounded-full font-bold transition',
 
     'text-sm leading-6 py-4 px-16 gap-4' => $size == 'lg',
@@ -20,4 +21,4 @@
     $class,
 ]) @disabled($status == 'disabled') {{ $attributes }}>
     {{ $slot }}
-</button>
+</{{ $tag }}>

@@ -19,3 +19,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home');
 });
+// Route::get('/', function () {
+//     return view('pages.partner');
+//     return view('pages.footer');
+// });
+// Route::get('/', function () {
+//     return view('pages.home-benefit');
+// });
+
+
+// Route::get('/hero', function () {
+//     return view('pages.home-hero');
+// });
