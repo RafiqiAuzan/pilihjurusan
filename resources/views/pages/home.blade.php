@@ -208,67 +208,71 @@
             </div>
 
             <div class="container mx-auto">
-                <div class="grid grid-cols-1 gap-5 px-10 pt-5 pb-10  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                    <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100">
-                        <div class="relative h-[200px]">
-                            <img class="absolute w-full h-full grayscale" src="https://source.unsplash.com/360x200?programming" alt="">
-                            <div class="absolute bottom-0 w-full overflow-hidden text-center bg-dark-100/[.7] "><strong class="text-light-100">Kuota habis</strong></div>
-                        </div>
-                        <div class="p-5">
-                            <span class="px-6 py-1 font-semibold border-2 rounded-full border-primary-500 text-primary-500">Kegiatan</span>
-                            <h5 class="mt-4 mb-2 text-2xl font-bold tracking-tight text-base-900">Keseruan Belajar Di Pilih Jurusan</h5>
-                            <p class="mb-3 font-normal text-gray-700">Sharing, curhat, dan bahkan bisa ngobrol prihal masalahmu dengan kakak coach profesional...</p>
-                            <div><i class="pr-2 far fa-calendar-check text-primary-500"> </i> 20 Oktober - 31 Oktober 2022</div>
-                            <div class="mb-5"><i class="pr-2 fas fa-map-pin text-primary-500"></i> Online</div>
+                <div class="swiper-wrapper">
+                    <div class="grid grid-cols-1 gap-5 px-10 pt-5 pb-10  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                        <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100 swiper-slide">
+                            <div class="relative h-[200px]">
+                                <img class="absolute w-full h-full grayscale" src="https://source.unsplash.com/360x200?programming" alt="">
+                                <div class="absolute bottom-0 w-full overflow-hidden text-center bg-dark-100/[.7] "><strong class="text-light-100">Kuota habis</strong></div>
+                            </div>
+                            <div class="p-5">
+                                <span class="px-6 py-1 font-semibold border-2 rounded-full border-primary-500 text-primary-500">Kegiatan</span>
+                                <h5 class="mt-4 mb-2 text-2xl font-bold tracking-tight text-base-900">Keseruan Belajar Di Pilih Jurusan</h5>
+                                <p class="mb-3 font-normal text-gray-700">Sharing, curhat, dan bahkan bisa ngobrol prihal masalahmu dengan kakak coach profesional...</p>
+                                <div><i class="pr-2 far fa-calendar-check text-primary-500"> </i> 20 Oktober - 31 Oktober 2022</div>
+                                <div class="mb-5"><i class="pr-2 fas fa-map-pin text-primary-500"></i> Online</div>
 
-                            <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
+                                <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100 lg:block hidden">
-                        <div class="relative h-[200px]">
-                            <img class="absolute w-full h-full grayscale" src="https://source.unsplash.com/360x200?programming" alt="">
-                            <div class="absolute bottom-0 w-full overflow-hidden text-center bg-dark-100/[.7]"><strong class="text-light-100">Kuota habis</strong></div>
-                        </div>
-                        <div class="p-5">
-                            <span class="px-6 py-1 font-semibold border-2 rounded-full border-primary-500 text-primary-500">Artikel</span>
-                            <h5 class="mt-4 mb-2 text-2xl font-bold tracking-tight text-base-900">PJ Fest 2022</h5>
-                            <p class="mb-3 font-normal text-gray-700">Festival yang rutin diadakan tiap tahunnya dengan mengundang bebrapa speaker dan Influencer terkemuka yang dapat membantu...</p>
+                        <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100 lg:block hidden swiper-slide">
+                            <div class="relative h-[200px]">
+                                <img class="absolute w-full h-full grayscale" src="https://source.unsplash.com/360x200?programming" alt="">
+                                <div class="absolute bottom-0 w-full overflow-hidden text-center bg-dark-100/[.7]"><strong class="text-light-100">Kuota habis</strong></div>
+                            </div>
+                            <div class="p-5">
+                                <span class="px-6 py-1 font-semibold border-2 rounded-full border-primary-500 text-primary-500">Artikel</span>
+                                <h5 class="mt-4 mb-2 text-2xl font-bold tracking-tight text-base-900">PJ Fest 2022</h5>
+                                <p class="mb-3 font-normal text-gray-700">Festival yang rutin diadakan tiap tahunnya dengan mengundang bebrapa speaker dan Influencer terkemuka yang dapat membantu...</p>
 
-                            <div><i class="pr-2 fas fa-user text-primary-500"></i> Pilih jurusan</div>
+                                <div><i class="pr-2 fas fa-user text-primary-500"></i> Pilih jurusan</div>
 
-                            <div class="mb-5"><i class="pr-2 fas fa-bars text-primary-500"></i> Education</div>
+                                <div class="mb-5"><i class="pr-2 fas fa-bars text-primary-500"></i> Education</div>
 
-                            <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
+                                <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100 lg:block hidden">
-                        <div class="relative h-[200px]">
-                            <img class="absolute w-full h-full" src="https://source.unsplash.com/360x200?programming" alt="">
+                        <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100 lg:block hidden swiper-slide">
+                            <div class="relative h-[200px]">
+                                <img class="absolute w-full h-full" src="https://source.unsplash.com/360x200?programming" alt="">
+                            </div>
+                            <div class="p-5">
+                                <span class="px-6 py-1 font-semibold border-2 rounded-full border-primary-500 text-primary-500">Kegiatan</span>
+                                <h5 class="mt-4 mb-2 text-2xl font-bold tracking-tight text-base-900">Keseruan Belajar Di Pilih Jurusan</h5>
+                                <p class="mb-3 font-normal text-gray-700">Sharing, curhat, dan bahkan bisa ngobrol prihal masalahmu dengan kakak coach profesional...</p>
+                                <div><i class="pr-2 far fa-calendar-check text-primary-500"> </i> 20 Oktober - 31 Oktober 2022</div>
+                                <div class="mb-5"><i class="pr-2 fas fa-map-pin text-primary-500"></i> Online</div>
+                                <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
+                            </div>
                         </div>
-                        <div class="p-5">
-                            <span class="px-6 py-1 font-semibold border-2 rounded-full border-primary-500 text-primary-500">Kegiatan</span>
-                            <h5 class="mt-4 mb-2 text-2xl font-bold tracking-tight text-base-900">Keseruan Belajar Di Pilih Jurusan</h5>
-                            <p class="mb-3 font-normal text-gray-700">Sharing, curhat, dan bahkan bisa ngobrol prihal masalahmu dengan kakak coach profesional...</p>
-                            <div><i class="pr-2 far fa-calendar-check text-primary-500"> </i> 20 Oktober - 31 Oktober 2022</div>
-                            <div class="mb-5"><i class="pr-2 fas fa-map-pin text-primary-500"></i> Online</div>
-                            <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
-                        </div>
-                    </div>
-                    <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100 lg:block hidden">
-                        <div class="relative h-[200px]">
-                            <img class="absolute w-full h-full" src="https://source.unsplash.com/360x200?programming" alt="">
+                        <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100 lg:block hidden swiper-slide">
+                            <div class="relative h-[200px]">
+                                <img class="absolute w-full h-full" src="https://source.unsplash.com/360x200?programming" alt="">
 
-                        </div>
-                        <div class="p-5">
-                            <span class="px-6 py-1 font-semibold border-2 rounded-full border-primary-500 text-primary-500">Kegiatan</span>
-                            <h5 class="mt-4 mb-2 text-2xl font-bold tracking-tight text-base-900">Keseruan Belajar Di Pilih Jurusan</h5>
-                            <p class="mb-3 font-normal text-gray-700">Sharing, curhat, dan bahkan bisa ngobrol prihal masalahmu dengan kakak coach profesional...</p>
-                            <div><i class="pr-2 far fa-calendar-check text-primary-500"> </i> 20 Oktober - 31 Oktober 2022</div>
-                            <div class="mb-5"><i class="pr-2 fas fa-map-pin text-primary-500"></i> Online</div>
-                            <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
+                            </div>
+                            <div class="p-5">
+                                <span class="px-6 py-1 font-semibold border-2 rounded-full border-primary-500 text-primary-500">Kegiatan</span>
+                                <h5 class="mt-4 mb-2 text-2xl font-bold tracking-tight text-base-900">Keseruan Belajar Di Pilih Jurusan</h5>
+                                <p class="mb-3 font-normal text-gray-700">Sharing, curhat, dan bahkan bisa ngobrol prihal masalahmu dengan kakak coach profesional...</p>
+                                <div><i class="pr-2 far fa-calendar-check text-primary-500"> </i> 20 Oktober - 31 Oktober 2022</div>
+                                <div class="mb-5"><i class="pr-2 fas fa-map-pin text-primary-500"></i> Online</div>
+                                <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
 
             <x-atoms.button size="default" status="solid" class="mx-auto">
@@ -353,8 +357,8 @@
         </div>
     </section>
 
-{{-- Footer --}}
-<x-atoms.navs.homefooter/>
+    {{-- Footer --}}
+    <x-atoms.navs.homefooter />
 
 </x-layouts.full-row>
 
