@@ -157,12 +157,10 @@
                         {{ __('sistem bimbingan insentif akan sangat membantu') }}
                     </p>
                 </div>
-                <x-atoms.youtube src="https://www.youtube.com/embed/8Ea4oq8qFtM" />
+                <x-atoms.youtube src="https://www.youtube.com/embed/OkJNCFAlyOU" />
             </div>
         </div>
     </section>
-
-
 
     {{-- Section activities --}}
     <section id="aktivitas " class="">
