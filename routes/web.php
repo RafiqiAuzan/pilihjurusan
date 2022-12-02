@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,8 +34,8 @@ Route::middleware('guest')->group(function () {
 // });
 
 
-// Route::get('/hero', function () {
-//     return view('pages.home-hero');
+// Route::get('/', function () {
+//     return view('pages.home-activities');
 // });
 
 Route::middleware('auth')->group(function () {

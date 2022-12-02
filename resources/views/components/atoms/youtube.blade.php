@@ -1,19 +1,15 @@
-<div class="flex flex-col justify-center items-center isolate max-w-screen-lg lg:h-full h-60 lg:w-full w-96">
-    {{-- lg:h-full h-60 lg:w-full w-96 --}}
+<div class="container mx-auto flex flex-col justify-center items-center isolate">
     <iframe
-        width="100%" height="540px" 
-        class="z-0 rounded-[36px]"
+        class="z-0 rounded-[36px] lg:w-[1024px] lg:h-[540px] sm:w-[372px] h-[200px]"
         src="{{ $src }}" id="youtube"
         title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen>
     </iframe>
     <button 
-        id="playbtn" class="playbtn z-1 rounded-[42px] flex flex-col items-start 
+        id="playbtn" class="playbtn z-1 rounded-[42px] flex flex-col justify-center items-center 
         px-[19px] py-[18px] w-[83px] h-[84px] absolute bg-[#FFFFFF]">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="47" fill="#F06623" class="bi bi-play-fill" viewBox="0 0 16 16">
-            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-        </svg>
+        <i class="fa-solid fa-play" style="color:#F06623; width: 46px; height:47px"></i>
     </button>
 </div>
 
