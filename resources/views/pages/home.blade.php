@@ -97,7 +97,7 @@
                         <div class="p-3">
                             <div class="h-full border border-solid shadow-[0px_1px_8px_rgba(0,0,0,0.12)] p-9 rounded-[36px] bg-light-100 border-light-300">
 
-                                <i class="fas fa-mug-hot fa-xl bg-[#FFDF64] rounded-3xl justify-center p-3 mx-auto w-9 h-9 item-center font-light"></i>
+                                <i class="fas fa-mug-hot fa-xl bg-[#FFDF64] rounded-3xl justify-center p-3 mx-auto w-9 h-9 item-center"></i>
 
                                 <h1 class="p-3 text-2xl font-bold text-center">
                                     Mudah Diakses
