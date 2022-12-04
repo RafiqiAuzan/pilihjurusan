@@ -12,14 +12,16 @@
         <i class="fa-solid fa-play" style="color:#F06623; width: 46px; height:47px"></i>
     </button>
 </div>
-
-<script type="text/javascript">
-$(document).ready(function(){
-    $(document).on("click",".playbtn", function(e) {
-        e.preventDefault();
-        $("#youtube")[0].src += "?autoplay=1";
-        $("#youtube").show();
-        $(".playbtn").hide();
-    });
-});
+<script>
+    document.addEventListener('livewire:load', function () {
+        // Your JS here.
+        console.log("jalan");
+        function autoplay(params) {
+            var elemen = document.getElementById("youtube");
+            elemen.setAttribute("src", elemen.getAttribute("src")+ "?autoplay=1");
+            document.getElementById("playbtn").style.display = "none";
+        }
+        var plybtn=document.getElementsByClassName("playbtn");
+        plybtn[0].addEventListener("click", autoplay);
+    })
 </script>

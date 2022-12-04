@@ -2,41 +2,41 @@
     {{-- Section Navbar --}}
     <x-atoms.navs.homenavbar />
 
-    {{-- Promo Card and Hero --}}
-    <section class="grid">
-        <section class="bg-[#FAF9F7] pt-[84px] lg:pt-0 lg:order-last">
-            <div class="container mx-auto py-7 lg:py-10 lg:px-20">
-                <div class="lg:flex mx-auto justify-between text-center bg-gradient-to-r from-[#FAF9F7] via-warning/50 to-[#FAF9F7] pt-[5px] pb-[25px] lg:py-[40px] lg:mb-[125px]">
-                    <p class=" mx-auto font-display not-italic font-bold text-[16px] text-[#151718] lg:text-xl md:text-base-900"><strong>Ayo dapatkan tawaran menarik dari kami!</strong></p>
-                    <button class="mx-auto font-body not-italic font-bold lg:text-xl text-[12px] text-primary-500 lg:mt-0 mt-[14px]">50% Discount</button>
-                </div>
+{{-- Promo Card and Hero --}}
+<section class="grid">
+    <section class="bg-[#FAF9F7] pt-[84px] lg:pt-0 lg:order-last">
+        <div class="container mx-auto py-7 lg:py-10 lg:px-20">
+            <div class="lg:flex mx-auto justify-between text-center bg-gradient-to-r from-[#FAF9F7] via-warning/50 to-[#FAF9F7] pt-[5px] pb-[25px] lg:py-[40px] lg:mb-[125px]">
+                <p class=" mx-auto font-display not-italic font-bold text-[16px] text-[#151718] lg:text-xl md:text-base-900"><strong>Ayo dapatkan tawaran menarik dari kami!</strong></p>
+                <button class="mx-auto font-body not-italic font-bold lg:text-xl text-[12px] text-primary-500 lg:mt-0 mt-[14px]">50% Discount</button>
             </div>
-        </section>
-
-        <section class="bg-base-100 lg:pt-[72px]">
-            <div class="container mx-auto">
-                <div class="lg:flex items-center min-h-[37rem]">
-                    <div class="order-2 ">
-                        <img class="mx-auto w-[320px] h-[320px] md:w-[360px] md:h-[360px]" src="{{ URL::to('/img/landing/hero.svg') }}">
-                    </div>
-                    <div class="content-center lg:grow">
-                        <h1 class="font-display not-italic font-extrabold text-4xl text-[#262829] pb-5 lg:text-[64px] lg:leading-[100%]"><strong>#PilihYangCocok</strong></h1>
-                        <p class="font-body not-italic font-normal text-base text-base-600 max-w-[372px] sm:max-w-[35rem]">Bersama Pilih Jurusan yang siap membantu kamu memilih jurusan dan karier sesuai minat dan bakatmu.</p>
-                        <x-atoms.button class="lg:w-auto w-full mt-[38px] mb-14">
-                            <i class="bi bi-arrow-right-circle-fill"></i> Coba Gratis
-                        </x-atoms.button>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </section>
+
+    <section class="bg-base-100 lg:pt-[72px]">
+        <div class="container mx-auto">
+            <div class="lg:flex items-center min-h-[37rem]">
+                <div class="order-2 ">
+                    <img class="mx-auto w-[320px] h-[320px] md:w-[360px] md:h-[360px]" src="{{ URL::to('/img/landing/hero.svg') }}">
+                </div>
+                <div class="content-center lg:grow">
+                    <h1 class="font-display not-italic font-extrabold text-4xl text-[#262829] pb-5 lg:text-[64px] lg:leading-[100%]"><strong>#PilihYangCocok</strong></h1>
+                    <p class="font-body not-italic font-normal text-base text-base-600 max-w-[372px] sm:max-w-[35rem]">Bersama Pilih Jurusan yang siap membantu kamu memilih jurusan dan karier sesuai minat dan bakatmu.</p>
+                    <x-atoms.button class="lg:w-auto w-full mt-[38px] mb-14">
+                        <i class="bi bi-arrow-right-circle-fill"></i> Coba Gratis
+                        </x-atoms.button>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
 
     {{-- Fun Fact --}}
 
 
-    {{-- Section benefit --}}
+{{-- Section benefit --}}
     <section id="benefit">
-        <div class="flex flex-col text-center bg-[#F9F7EA]">
+        <div class="flex flex-col text-center bg-[#F9F7EA]" >
             <div class="py-[100px]">
                 <div class="grid grid-cols-6">
                     <h1 class="col-span-4 col-start-2 text-4xl font-bold text-base-800">Keuntungan yang bisa kamu dapat</h1>
@@ -97,7 +97,7 @@
                         <div class="p-3">
                             <div class="h-full border border-solid shadow-[0px_1px_8px_rgba(0,0,0,0.12)] p-9 rounded-[36px] bg-light-100 border-light-300">
 
-                                <i class="fas fa-mug-hot fa-xl bg-[#FFDF64] rounded-3xl justify-center p-3 mx-auto w-9 h-9 item-center font-light"></i>
+                                <i class="fas fa-mug-hot fa-xl bg-[#FFDF64] rounded-3xl justify-center p-3 mx-auto w-9 h-9 item-center"></i>
 
                                 <h1 class="p-3 text-2xl font-bold text-center">
                                     Mudah Diakses
