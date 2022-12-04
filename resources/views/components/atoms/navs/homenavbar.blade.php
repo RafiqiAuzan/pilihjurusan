@@ -3,13 +3,13 @@
     <div class="container mx-auto gap-[85px] px-2 lg:flex lg:items-center lg:justify-between">
       <div class="flex justify-between my-4">
         {{-- Kiri --}}
-        <div class="">
+        <div class="mx-6">
           <img src="{{ asset('img/global/mainlogo.webp')}}" alt="Logo Pilih Jurusan">
         </div>
         {{-- Kanan --}}
         <div class="flex">
-          <span class="lg:hidden" @click="navmenu = ! navmenu">
-            <i class="bi-list"></i>
+          <span class="lg:hidden" @click="navmenu = ! navmenu"> 
+            <i class="fa-solid fa-bars"></i>
           </span>
         </div>
       </div>
