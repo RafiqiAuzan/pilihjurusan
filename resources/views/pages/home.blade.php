@@ -265,17 +265,17 @@
 {{-- Section Message --}}
     <section class="bg-[#FAF9F7]">
         <div class="flex flex-col items-center justify-center gap-12 py-32" px="100px">
-                <div class="flex flex-col items-center justify-center gap-12">
-                    <div class="items-center gap-6">
-                        <p class="w-9/12 pb-5 mx-auto text-4xl font-bold text-center font-display text-base-800 lg:w-full">
+            <div class="flex flex-col items-center justify-center gap-12">
+                <div class="items-center gap-6">
+                    <p class="w-9/12 pb-5 mx-auto text-4xl font-bold text-center font-display text-base-800 lg:w-full">
                             {{ __('Seperti apa sistem Bimbingannya?') }}
-                        </p>
-                        <p class="hidden max-w-5xl text-base not-italic font-normal text-center lg:block h-11 font-body text-base-600">
+                    </p>
+                    <p class="hidden max-w-5xl text-base not-italic font-normal text-center lg:block h-11 font-body text-base-600">
                             {{ __('sistem bimbingan insentif akan sangat membantu') }}
-                        </p>
-                    </div>
-                    <x-atoms.youtube src="https://www.youtube.com/embed/8Ea4oq8qFtM" />
+                    </p>
                 </div>
+                <x-atoms.youtube src="https://www.youtube.com/embed/OkJNCFAlyOU" />
+            </div>
         </div>
     </section>
 
