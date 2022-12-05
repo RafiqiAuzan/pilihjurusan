@@ -2,76 +2,57 @@
 {{-- Section Navbar --}}
 <x-atoms.navs.homenavbar/>
 
-{{-- Hero Landing --}}
-<section class="bg-base-100 pt-[72px]">
-    <div class="container mx-auto">
-        <div>
-            <div class="flex items-center min-h-[37rem]">
-                <div class="content-center grow">
-                    <h1 class="py-4 text-xl font-extrabold font-display md:text-7xl"><strong>#PilihYangCocok</strong></h1>
-                    <p class="font-body font-normal text-base-600 max-w-[35rem]">Bersama Pilih Jurusan yang siap membantu kamu memilih jurusan dan karier sesuai minat dan bakatmu.</p>
-                    <x-atoms.button class="bi bi-arrow-right-circle-fill mt-7"> Coba Gratis</x-atoms.button>
-                </div>
-                <div class="">
-                    <img class="" src="{{ URL::to('/img/landing/hero.svg') }}">
-                </div>
+{{-- Promo Card and Hero --}}
+<section class="grid">
+    <section class="bg-[#FAF9F7] pt-[84px] lg:pt-0 lg:order-last">
+        <div class="container mx-auto py-7 lg:py-10 lg:px-20">
+            <div class="lg:flex mx-auto justify-between text-center bg-gradient-to-r from-[#FAF9F7] via-warning/50 to-[#FAF9F7] pt-[5px] pb-[25px] lg:py-[40px] lg:mb-[125px]">
+                <p class=" mx-auto font-display not-italic font-bold text-[16px] text-[#151718] lg:text-xl md:text-base-900"><strong>Ayo dapatkan tawaran menarik dari kami!</strong></p>
+                <button class="mx-auto font-body not-italic font-bold lg:text-xl text-[12px] text-primary-500 lg:mt-0 mt-[14px]">50% Discount</button>
             </div>
         </div>
     </section>
-
-    <section class="bg-base-100">
-    <div class="container px-20 py-10 mx-auto ">
-        <div class=" container mx-auto flex justify-between text-center bg-gradient-to-r from-base-100 via-warning/25 to-base-100 rounded-[1.5rem] p-10 py-14">
-            <strong class="mx-auto text-xl">Ayo dapatkan tawaran menarik dari kami!</strong>
-            <button class="mx-auto text-xl font-bold font-body text-primary-500">50% Discount</button>
+    <section class="bg-base-100 lg:pt-[72px]">
+        <div class="container mx-auto">
+            <div class="lg:flex items-center min-h-[37rem]">
+                <div class="order-2 ">
+                    <img class="mx-auto w-[320px] h-[320px] md:w-[360px] md:h-[360px]" src="{{ URL::to('/img/landing/hero.svg') }}">
+                </div>
+                <div class="content-center lg:grow lg:px-10 px-3">
+                    <h1 class="font-display not-italic font-extrabold text-4xl text-[#262829] pb-5 lg:text-[64px] lg:leading-[100%]"><strong>#PilihYangCocok</strong></h1>
+                    <p class="font-body not-italic font-normal text-base text-base-600 max-w-[372px] sm:max-w-[35rem]">Bersama Pilih Jurusan yang siap membantu kamu memilih jurusan dan karier sesuai minat dan bakatmu.</p>
+                    <x-atoms.button class="lg:w-auto w-full mt-[38px] mb-14">
+                        <i class="bi bi-arrow-right-circle-fill"></i> Coba Gratis
+                        </x-atoms.button>
+                </div>
+            </div>
         </div>
     </section>
 </section>
 
 {{-- Fun Fact --}}
-
-<section class="  bg-secondary-100  mb-4">
-    <div class="container flex items-center justify-between mx-auto mb-10">
-        <div class="self-start ">
-            <img src="{{ asset('img/global/bro.png')}}" alt="Frame">
+<section class=" bg-secondary-100 pb-10">
+    <div class="container lg:flex items-center justify-between mx-auto w-full lg:px-10">
+        <div class="self-star">
+            <img  class="lg:w-[552px] w-[360px] md:w-[400px] mx-auto" src="{{ asset('img/global/bro.png')}}" alt="Frame">
         </div>
-      <div class="self-end w-[554px] px-10 py-16 mx-auto text-left ">
-        <h1 class="col-span-4 col-start-2 text-4xl font-bold text-base-800">Tahukah kamu?</h1>
-        <p class="col-span-4 col-start-2 pt-6 text-base-600">Berdasarkan data 20** kualitas pendidikan di indonesia cukup rendah loh, hal tersebut dikarenakan 7 dari 10 pelajar di indonesia mengaku salah dalam memilih Jurusan-nya</p>
-        <p class="col-span-4 col-start-2 pt-6 text-base-600">Apakah kamu salah satu diantaranya?</p>
-      </div>
-
+        <div class="self-end first-line:px-10 py-10 mx-auto text-left order-2 lg:px-10 px-3">
+            <h1 class="col-span-4 col-start-2 text-4xl font-bold text-base-800">Tahukah kamu?</h1>
+            <p class="col-span-4 col-start-2 pt-6 text-base-600">Berdasarkan data 20** kualitas pendidikan di indonesia cukup rendah loh, hal tersebut dikarenakan 7 dari 10 pelajar di indonesia mengaku salah dalam memilih Jurusan-nya</p>
+            <p class="col-span-4 col-start-2 py-6 text-base-600">Apakah kamu salah satu diantaranya?</p>
+            <x-atoms.button size="default" status="solid" class="mx-auto w-full lg:w-auto lg:hidden block">
+                Cari tahu lebih
+            </x-atoms.button>
+        </div>
   </div>
-    <div class=" text-center my-6 ">
-        <h1 class="col-span-4 col-start-2 text-4xl font-bold text-base-800">Sekolah Menjadi Salah Satu Faktor Penentu</h1>
-        <p class="col-span-4 col-start-2 pt-6 text-base-600">Sekolah menjadi salah satu pionir penentu kesuksesan Pelajar di Indonesia loh!</p>
+    <div class="container lg:text-center text-left lg:mt-16 px-8 mx-auto">
+        <h1 class="col-span-4 col-start-2 text-4xl font-bold text-base-800 pt-10">Sekolah Menjadi Salah Satu Faktor Penentu</h1>
+        <p class="col-span-4 col-start-2 pt-6 text-base-600 mb-10">Sekolah menjadi salah satu pionir penentu kesuksesan Pelajar di Indonesia loh!</p>
+        <x-atoms.button size="default" status="solid" class="mx-auto w-full lg:w-auto">
+            Yuk kerjasama dengan kami!
+        </x-atoms.button>
     </div>
-
-    <x-atoms.button size="default" status="solid" class="mx-auto">
-        Lihat Semua
-    </x-atoms.button>
 </section>
-{{-- <section id="funFact">
-    <div class=" flex flex-col  bg-secondary-100  mb-4" >
-        <div class=" container flex items-center justify-between mx-auto">
-
-            <div class="row w-[400px] h-[400px]">
-                <img src="{{ asset('img/global/bro.png')}}" alt="Frame">
-            </div>
-            
-            <div class="">
-                <h1 class="col-span-4 col-start-2 text-4xl font-bold text-base-800">Tahukah kamu?</h1>
-                <p class="col-span-4 col-start-2 pt-6 text-base-600">Berdasarkan data 20** kualitas pendidikan di indonesia cukup rendah loh, hal tersebut dikarenakan 7 dari 10 pelajar di indonesia mengaku salah dalam memilih Jurusan-nya</p>
-                <p class="col-span-4 col-start-2 pt-6 text-base-600">Apakah kamu salah satu diantaranya?</p>
-            </div>
-            
-        </div>
-
-
-    </div>
-
-</section> --}}
-
 
 {{-- Section benefit --}}
 <section id="benefit">
@@ -375,8 +356,8 @@
     {{-- Section Persuation --}}
     <section class=" bg-[#FAF9F7]">
         <div class="container flex items-center justify-between mx-auto">
-          <div class="self-start px-10 py-16 mx-auto text-left lg:text-center">
-              <div class="mt-32">
+          <div class="self-start px-5 py-16 mx-auto text-left lg:text-center">
+              <div class="lg:mt-32">
                   <h1 class="pb-5 text-4xl font-bold text-base-800">Menarik Bukan?</h1>
               </div>
               <div class="pb-10 mx-auto font-bold leading-6 font-body ml-10w-full lg:w-10/12 xl:w-9/12">
