@@ -45,12 +45,81 @@
             </x-atoms.button>
         </div>
   </div>
-    <div class="container lg:text-center text-left lg:mt-16 px-8 mx-auto">
+    <div class="container lg:text-center text-left lg:mt-16 px-8 mx-auto pb-16">
         <h1 class="col-span-4 col-start-2 text-4xl font-bold text-base-800 pt-10">Sekolah Menjadi Salah Satu Faktor Penentu</h1>
         <p class="col-span-4 col-start-2 pt-6 text-base-600 mb-10">Sekolah menjadi salah satu pionir penentu kesuksesan Pelajar di Indonesia loh!</p>
         <x-atoms.button size="default" status="solid" class="mx-auto w-full lg:w-auto">
             Yuk kerjasama dengan kami!
         </x-atoms.button>
+    </div>
+</section>
+
+{{-- Section Layanan --}}
+<section>
+    <div class="w-full h-full bg-[#FAF9F7] flex items-center justify-between">
+        <div class="py-16 text-center mx-auto">
+            <div class="mt-16">
+                <h1 class="font-bold text-base-800 text-4xl pb-10">Apa saja layanan kami?</h1>
+            </div>
+            <div class=" font-body leading-6 ml-10w-full mx-auto font-bold lg:w-10/12 xl:w-9/12 pb-10 hidden lg:block">
+                  <p class="font-normal text-base-500">Tenang saja, Pilih Jurusan juga sangat mengerti kamu, kami menyediakan beragam paket layanan yang menarik sebagai berikut:</p>
+            </div>
+            <div class="container mx-auto sm:w-[360px]">
+                <div class="flex flex-row justify-center align-center gap-4">
+                    <x-atoms.button status="solid">
+                        {{ __('Individu') }}
+                    </x-atoms.button>
+                    <x-atoms.button status="outline">
+                        {{ __('Sekolah') }}
+                    </x-atoms.button>
+                </div>
+            </div>
+            <div class="container grid grid-cols-1 lg:grid-cols-2 justify-center items-center p-16 lg:gap-0 gap-8 text-center mx-auto">
+                <div class="w-[372px] h-[480px] border border-solid shadow-[0px_1px_8px_rgba(0,0,0,0.08)] px-8 pt-8 rounded-[36px] bg-light-100 border-light-100 mx-auto lg:mr-5">
+                    <h1 class="text-2xl font-bold leading-9 text-left">
+                        Penjurusan IPA/IPS
+                    </h1>
+                    <p class="pt-3 text-base font-normal text-base-600 text-justify">
+                        Layanan yang membantu kamu dalam menentukan Jurusan yang cocok denganmu
+                    </p>
+
+                    <p class="pt-5 text-base font-normal text-base-600 text-left">
+                        Fitur yang didapatkan:
+                    </p>
+
+                    <ul class="list-none text-base font-normal text-base-600 text-left">
+                        <li>✔ Workshop</li>
+                        <li>✔ Tes Psikologi</li>
+                    </ul>
+
+                    <x-atoms.button status="solid" size="lg" class="mx-auto w-full mt-[154px]">
+                        <i class="bi bi-arrow-right-circle-fill"></i> Pilih
+                    </x-atoms.button>
+                </div>
+                <div class="w-[372px] h-[480px] border border-solid shadow-[0px_1px_8px_rgba(0,0,0,0.08)] p-8 rounded-[36px] bg-light-100 border-light-100 mx-auto lg:ml-4">
+                    <h1 class="text-2xl font-bold leading-9 text-left">
+                        Kuliah Karir
+                    </h1>
+                    <p class="pt-3 text-base font-normal text-base-600 text-justify">
+                        Layanan untuk mengetahui minat bakat serta kemampuan kerja yang kamu miliki
+                    </p>
+
+                    <p class="pt-5 text-base font-normal text-base-600 text-left">
+                        Fitur yang didapatkan:
+                    </p>
+
+                    <ul class="list-none text-base font-normal text-base-600 text-left">
+                        <li>✔ Workshop</li>
+                        <li>✔ Tes Psikologi</li>
+                        <li>✔ Coaching</li>
+                    </ul>
+                    <x-atoms.button status="solid" size="lg" class="mx-auto w-full mt-[130px]">
+                        <i class="bi bi-arrow-right-circle-fill"></i> Pilih
+                    </x-atoms.button>
+
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -194,7 +263,7 @@
 </section>
 
 {{-- Section Message --}}
-    <section>
+    <section class="bg-[#FAF9F7]">
         <div class="flex flex-col items-center justify-center gap-12 py-32" px="100px">
                 <div class="flex flex-col items-center justify-center gap-12">
                     <div class="items-center gap-6">
