@@ -281,27 +281,27 @@
 
     {{-- Section activities --}}
      <section id="aktivitas " class="">
-        <div class="mx-auto w-full h-full bg-[#F9F7EA] p-16">
-            <h3 class="mb-6 text-3xl font-bold text-center text-base-800">Yang terbaru dari kami</h3>
-            <p class="text-lg font-normal text-center text-base-600">Cerita baru, kegiatan, dan keseruan lainnya, Baca Blog terbaru kami disini.</p>
+        <div class="mx-auto w-full h-full bg-[#F9F7EA] p-10">
+            <h3 class="mb-6 text-3xl font-bold text-center text-base-800">{{ __('Yang terbaru dari kami') }}</h3>
+            <p class="text-lg font-normal text-center text-base-600">{{ __('Cerita baru, kegiatan, dan keseruan lainnya, Baca Blog terbaru kami disini.') }}</p>
 
-            <div class="container mx-auto">
-                <div class="flex justify-center gap-3 flex-cols mt-7">
+            <div class="container mx-auto mt-5">
+                <div class="flex flex-row justify-center gap-3 mt-5 !px-0">
                     <x-atoms.button size="default" status="solid" class="">
-                        Terbaru
+                        {{ __('Terbaru') }}
                     </x-atoms.button>
                     <x-atoms.button size="default" status="outline" class="">
-                        Artikel
+                        {{ __('Artikel') }}
                     </x-atoms.button>
                     <x-atoms.button size="default" status="outline" class="">
-                        kegiatan
+                        {{ __('Kegiatan') }}
                     </x-atoms.button>
                 </div>
             </div>
 
             <div class="container mx-auto">
-            <div class="grid grid-cols-1 gap-5 px-16 pt-5 pb-10 mx-aut sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                <div class= "mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100 lg:block sm:hidden">
+            <div class="grid grid-cols-1 gap-5 px-10 pt-5 pb-10  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div class= "mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100">
                     <div class="relative h-[200px]">
                         <img class="absolute w-full h-full grayscale" src="https://source.unsplash.com/360x200?programming" alt="">
                         <div class="absolute bottom-0 w-full overflow-hidden text-center bg-dark-100/[.7] "><strong class="text-light-100">Kuota habis</strong></div>
@@ -313,10 +313,11 @@
                         <div><i class="pr-2 far fa-calendar-check text-primary-500"> </i> 20 Oktober - 31 Oktober</div>
                        <div class="mb-5"><i class="pr-2 fas fa-map-pin text-primary-500"></i>online</div>
 
-                        <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
+                        <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">{{ __('Lebih lanjut...') }}</a>
                     </div>
                 </div>
-                <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100">
+
+                <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100 lg:block hidden">
                     <div class="relative h-[200px]">
                         <img class="absolute w-full h-full grayscale" src="https://source.unsplash.com/360x200?programming" alt="">
                         <div class="absolute bottom-0 w-full overflow-hidden text-center bg-dark-100/[.7]"><strong class="text-light-100">Kuota habis</strong></div>
@@ -328,10 +329,11 @@
 
                         <div><i class="pr-2 fas fa-user text-primary-500"></i> Pilih jurusan</div>
                         <div class="mb-5"><i class="pr-2 fas fa-bars text-primary-500"></i> Education</div>
-                        <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
+                        <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">{{ __('Lebih lanjut...') }}</a>
                     </div>
                 </div>
-                <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100">
+
+                <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100 lg:block hidden">
                     <div class="relative h-[200px]">
                         <img class="absolute w-full h-full" src="https://source.unsplash.com/360x200?programming" alt="">
                     </div>
@@ -341,10 +343,10 @@
                         <p class="mb-3 font-normal text-gray-700">Sharing, curhat, dan bahkan bisa ngobrol prihal masalahmu dengan kakak coach profesional...</p>
                         <div><i class="pr-2 far fa-calendar-check text-primary-500"> </i> 20 Oktober - 31 Oktober</div>
                        <div class="mb-5"><i class="pr-2 fas fa-map-pin text-primary-500"></i>online</div>
-                         <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">Lebih lanjut...</a>
+                         <a class="text-sm font-semibold text-primary-500 hover:underline" href="#">{{ __('Lebih lanjut...') }}</a>
                     </div>
                 </div>
-                <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100">
+                <div class="mt-5 overflow-hidden shadow-lg rounded-2xl bg-light-100 lg:block hidden">
                     <div class="relative h-[200px]">
                         <img class="absolute w-full h-full" src="https://source.unsplash.com/360x200?programming" alt="">
 
@@ -361,8 +363,8 @@
             </div>
             </div>
 
-            <x-atoms.button size="default" status="solid" class="mx-auto">
-                Lihat Semua
+            <x-atoms.button size="default" status="solid" class="mx-auto mt-5">
+                {{ __('Lihat Semua') }}
             </x-atoms.button>
     </section>
 
