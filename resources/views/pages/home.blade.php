@@ -283,7 +283,7 @@
      <section id="aktivitas " class="">
         <div class="mx-auto w-full h-full bg-[#F9F7EA] p-10">
             <h3 class="mb-6 text-3xl font-bold text-center text-base-800">{{ __('Yang terbaru dari kami') }}</h3>
-            <p class="text-lg font-normal text-center text-base-600">{{ __('Cerita baru, kegiatan, dan keseruan lainnya, Baca Blog terbaru kami disini.') }}</p>
+            <p class="text-lg font-normal text-center text-base-600 lg:block hidden">{{ __('Cerita baru, kegiatan, dan keseruan lainnya, Baca Blog terbaru kami disini.') }}</p>
 
             <div class="container mx-auto mt-5">
                 <div class="flex flex-row justify-center gap-3 mt-5 !px-0">
