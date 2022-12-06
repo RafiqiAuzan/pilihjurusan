@@ -32,6 +32,7 @@
         "combined-stream": "^1.0.8",
         "delayed-stream": "^1.0.0",
         "dotenv": "^16.0.3",
+        "embla-carousel": "^7.0.5",
         "esbuild": "^0.15.13",
         "esbuild-linux-64": "^0.15.13",
         "follow-redirects": "^1.15.2",
@@ -50,7 +51,6 @@
         "rollup": "^2.79.1",
         "source-map-js": "^1.0.2",
         "supports-preserve-symlinks-flag": "^1.0.0",
-        "swiper": "^8.4.5",
         "vite-plugin-full-reload": "^1.0.4"
     },
     "repository": {

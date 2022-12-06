@@ -1,19 +1,23 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import EmblaCarousel from 'embla-carousel'
 
-var swiper = new Swiper('.swiper-activities', {
+import {
+    setupPrevNextBtns,
+    disablePrevNextBtns
+} from "./nextswipper";
+import "../css/embla.css";
 
-      modules: [Navigation, Pagination],
-    // Navigation arrows
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    loop: true,
+const wrap = document.querySelector(".carousel__activites");
+const viewPort = wrap.querySelector(".carosel__viewport");
+const prevBtn = wrap.querySelector(".embla__button--prev");
+const nextBtn = wrap.querySelector(".embla__button--next");
+const embla = EmblaCarousel(viewPort, {
+    slidesToScroll: 4,
+    skipSnaps: true,
+    loop: true
+});
+const disablePrevAndNextBtns = disablePrevNextBtns(prevBtn, nextBtn, embla);
 
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-    }
-    
-  });
+setupPrevNextBtns(prevBtn, nextBtn, embla);
+
+embla.on("select", disablePrevAndNextBtns);
+embla.on("init", disablePrevAndNextBtns);

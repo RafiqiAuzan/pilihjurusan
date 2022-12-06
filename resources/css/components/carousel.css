@@ -1,0 +1,16 @@
+.carousel__viewport {
+    @apply w-full overflow-hidden;
+}
+
+.carousel__viewport.is-draggable {
+    @apply cursor-grab;
+}
+
+.carousel__viewport.is-dragging {
+    @apply cursor-grabbing;
+}
+
+/* Slide */
+.carousel__slide {
+    @apply relative min-w-[50%] pl-[10px];
+}

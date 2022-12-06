@@ -2,16 +2,16 @@
 
 <x-layouts.base class=" {{ $class }}">
 
-  <x-atoms.navs.homenavbar/>
+    <x-atoms.navs.homenavbar />
 
-  <div class="">
-    <div class="min-h-screen">
-    {{ $slot }}
+    <div class="">
+        <div class="min-h-screen">
+            {{ $slot }}
+        </div>
     </div>
-  </div>
 
-  {{-- widget --}}
-  <x-atoms.cornerwidget/>
+    {{-- widget --}}
+    <x-atoms.cornerwidget />
 
-  <x-atoms.navs.homefooter/>
-</x-layouts.base> 
+    <x-atoms.navs.homefooter />
+</x-layouts.base>
