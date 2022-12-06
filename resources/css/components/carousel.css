@@ -1,3 +1,9 @@
+/* Viewport & Container */
+
+.carousel {
+    @apply relative mx-auto;
+}
+
 .carousel__viewport {
     @apply w-full overflow-hidden;
 }
@@ -10,7 +16,51 @@
     @apply cursor-grabbing;
 }
 
+.carousel__container {
+    @apply flex select-none flex-nowrap;
+}
+
 /* Slide */
 .carousel__slide {
-    @apply relative min-w-[50%] pl-[10px];
+    @apply relative min-w-full md:min-w-[50%];
+}
+
+
+/* Buttons */
+.carousel__button {
+
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+    touch-action: manipulation;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    fill: #1bcacd;
+    padding: 0;
+}
+
+.carousel__button:disabled {
+
+    cursor: default;
+    opacity: 0.3;
+}
+
+.carousel__button--inner {
+    @apply h-full w-full
+
+}
+
+.carousel__button--prev {
+    left: 27px;
+}
+
+.carousel__button--next {
+    right: 27px;
 }

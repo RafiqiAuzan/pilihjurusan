@@ -4,16 +4,15 @@ import {
     setupPrevNextBtns,
     disablePrevNextBtns
 } from "./nextswipper";
-import "../css/embla.css";
 
-const wrap = document.querySelector(".carousel__activites");
-const viewPort = wrap.querySelector(".carosel__viewport");
-const prevBtn = wrap.querySelector(".embla__button--prev");
-const nextBtn = wrap.querySelector(".embla__button--next");
+const wrap = document.querySelector(".carouselActivites");
+const viewPort = wrap.querySelector(".carousel__viewport");
+const prevBtn = wrap.querySelector(".carousel__button--prev");
+const nextBtn = wrap.querySelector(".carousel__button--next");
 const embla = EmblaCarousel(viewPort, {
     slidesToScroll: 4,
     skipSnaps: true,
-    loop: true
+    // loop: true
 });
 const disablePrevAndNextBtns = disablePrevNextBtns(prevBtn, nextBtn, embla);
 
