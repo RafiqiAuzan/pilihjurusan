@@ -17,7 +17,7 @@
 }
 
 .carousel__container {
-    @apply flex select-none flex-nowrap;
+    @apply grid select-none grid-flow-col auto-cols-[30%] ;
 }
 
 /* Slide */

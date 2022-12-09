@@ -396,8 +396,8 @@
 
 
     {{-- Section activities --}}
-    <section id="aktivitas " class="">
-        <div class="container mx-auto w-full h-full bg-[#F9F7EA] p-10">
+    <section id="aktivitas " class="bg-[#F9F7EA]">
+        <div class="container mx-auto w-full h-full  p-10">
             <h3 class="mb-6 text-3xl font-bold text-center text-base-800">{{ __('Yang terbaru dari kami') }}</h3>
             <p class="hidden text-lg font-normal text-center text-base-600 lg:block">
                 {{ __('Cerita baru, kegiatan, dan keseruan lainnya, Baca Blog terbaru kami disini.') }}</p>
@@ -415,7 +415,7 @@
                     </x-atoms.button>
                 </div>
             </div>
-            <div class="mx-auto">
+            <div class="mx-auto mt-5">
                 {{-- <div class="grid grid-cols-1 gap-5 px-10 pt-5 pb-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4"> --}}
                 <div class="carousel carouselActivites">
                     <div class="carousel__viewport">
@@ -533,6 +533,58 @@
                                 </div>
                             </div>
 
+                            <div class="h-full mx-5 my-3 overflow-hidden carousel__slide rounded-2xl bg-light-100">
+                                <div class="relative h-[200px]">
+                                    <img class="absolute w-full h-full"
+                                        src="https://source.unsplash.com/360x200?programming" alt="">
+
+                                </div>
+                                <div class="p-5">
+                                    <span class="font-semibold text-2xs text-primary-500">Kegiatan</span>
+                                    <h5 class="mt-4 mb-2 text-2xl font-bold tracking-tight text-base-900">
+                                        Keseruan
+                                        Belajar
+                                        Di Pilih Jurusan</h5>
+                                    <p class="mb-3 font-normal text-gray-700">Sharing, curhat, dan bahkan bisa
+                                        ngobrol
+                                        prihal masalahmu dengan kakak coach profesional...</p>
+                                    <div><i class="pr-2 far fa-calendar-check text-primary-500"></i> 20 Oktober
+                                        -
+                                        31
+                                        Oktober</div>
+                                    <div class="mb-5"><i class="pr-2 fas fa-map-pin text-primary-500"></i>online
+                                    </div>
+                                    <a class="text-sm font-semibold text-primary-500 hover:underline"
+                                        href="#">Lebih
+                                        lanjut...</a>
+                                </div>
+                            </div>
+                            <div class="h-full mx-5 my-3 overflow-hidden carousel__slide rounded-2xl bg-light-100">
+                                <div class="relative h-[200px]">
+                                    <img class="absolute w-full h-full"
+                                        src="https://source.unsplash.com/360x200?programming" alt="">
+
+                                </div>
+                                <div class="p-5">
+                                    <span class="font-semibold text-2xs text-primary-500">Kegiatan</span>
+                                    <h5 class="mt-4 mb-2 text-2xl font-bold tracking-tight text-base-900">
+                                        Keseruan
+                                        Belajar
+                                        Di Pilih Jurusan</h5>
+                                    <p class="mb-3 font-normal text-gray-700">Sharing, curhat, dan bahkan bisa
+                                        ngobrol
+                                        prihal masalahmu dengan kakak coach profesional...</p>
+                                    <div><i class="pr-2 far fa-calendar-check text-primary-500"></i> 20 Oktober
+                                        -
+                                        31
+                                        Oktober</div>
+                                    <div class="mb-5"><i class="pr-2 fas fa-map-pin text-primary-500"></i>online
+                                    </div>
+                                    <a class="text-sm font-semibold text-primary-500 hover:underline"
+                                        href="#">Lebih
+                                        lanjut...</a>
+                                </div>
+                            </div>
                             <div class="h-full mx-5 my-3 overflow-hidden carousel__slide rounded-2xl bg-light-100">
                                 <div class="relative h-[200px]">
                                     <img class="absolute w-full h-full"
