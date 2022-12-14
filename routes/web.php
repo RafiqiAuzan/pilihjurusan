@@ -17,14 +17,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
-
-Route::middleware('guest')->group(function () {
-    Route::get('login', [LoginController::class, 'index'])->name('login');
-    Route::post('login', [LoginController::class, 'authenticate']);
-    Route::get('lupa-kata-sandi', [LoginController::class, 'index'])->name('forgot-password');
+    return view('pages.transactions.detailpembayaran');
 });
+
+// Route::middleware('guest')->group(function () {
+//     Route::get('login', [LoginController::class, 'index'])->name('login');
+//     Route::post('login', [LoginController::class, 'authenticate']);
+//     Route::get('lupa-kata-sandi', [LoginController::class, 'index'])->name('forgot-password');
+// });
 // Route::get('/', function () {
 //     return view('pages.partner');
 //     return view('pages.footer');
@@ -37,18 +37,18 @@ Route::middleware('guest')->group(function () {
 // Route::get('/', function () {
 //     return view('pages.home-activities');
 // });
-
-Route::middleware('auth')->group(function () {
-    Route::get(
-        'logout',
-        function (Request $request) {
-            Auth::logout();
-
-            $request->session()->invalidate();
-
-            $request->session()->regenerateToken();
-
-            return redirect()->to('login');
-        }
-    );
-});
+// 
+// Route::middleware('auth')->group(function () {
+//     Route::get(
+//         'logout',
+//         function (Request $request) {
+//             Auth::logout();
+// 
+//             $request->session()->invalidate();
+// 
+//             $request->session()->regenerateToken();
+// 
+//             return redirect()->to('login');
+//         }
+//     );
+// });
