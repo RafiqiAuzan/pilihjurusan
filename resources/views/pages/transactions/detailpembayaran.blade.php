@@ -37,7 +37,7 @@
             </div>
             <div class="lg:row-span-2 lg:col-span-2 lg:w-[790px] lg:h-[700px] lg:ml-0 ml-5 mx-auto lg:mt-9">
                 <div class="border-b border-light-300 lg:mr-20 mr-10 pb-5 mx-auto">
-                    <h2 class="text-2xl font-bold text-base-800 font-display lg:pt-6">Rincian Pembayaran</h2>
+                    <h2 class="text-2xl font-bold text-base-800 font-display lg:pt-6 pt-5">Rincian Pembayaran</h2>
                     <p class="text-base-600 font-body text-xl pt-6">Metode Pembayaran</p>
                     <div class="flex justify-between pt-4 w-[140px]">
                         <img class="ml-2" src="{{ asset('img/global/bri.png') }}" alt="Frame">
