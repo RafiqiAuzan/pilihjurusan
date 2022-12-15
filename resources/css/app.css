@@ -3,8 +3,13 @@
 @import "tailwindcss/base";
 @import "./base/typography.css";
 
+/* Components */
 @import "tailwindcss/components";
 @import "./components/carousel.css";
+
+/* Customs CSS */
+@import "./customs/tables.css";
+
 
 @import "tailwindcss/utilities";
 @import "./utils/alpinejs";

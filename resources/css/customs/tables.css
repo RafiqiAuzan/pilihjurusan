@@ -1,0 +1,14 @@
+
+.transction-tables>tbody>tr:nth-child(even) {
+border-bottom: .5px solid #000;
+}
+
+
+.transction-tables>tbody>tr>td {
+padding-top: 12px;
+padding-bottom: 12px;
+}
+
+.transction-tables>tbody>tr>td:nth-child(2) {
+text-align: right;
+}

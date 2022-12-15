@@ -2,29 +2,30 @@
 
     <!-- component -->
     <section id="transaction" class="mx-auto">
-        <div class="container w-full mx-auto px-7 lg:px-[128px]">
+        <div class=" w-full mx-auto px-7 lg:px-[128px]">
             <nav class=" rounded-md w-full mt-[100px] items-center">
-                <ol class="list-reset flex text-xs text-base-400">
+                <ol class="flex text-xs list-reset text-base-400">
                     <li><a href="#" class="">Layanan</a></li>
-                    <i class="fas fa-chevron-right mx-2 "></i>
+                    <i class="mx-2 fas fa-chevron-right "></i>
                     <li><a href="#" class="">Paket Penjurusan IPA/IPS</a></li>
-                    <i class="fas fa-chevron-right mx-2 text-base-800"></i>
+                    <i class="mx-2 fas fa-chevron-right text-base-800"></i>
                     <li class="text-base-800">Transaksi</li>
                 </ol>
             </nav>
 
-            <div class="flex flex-row mt-6 items-center mb-8">
-                <a href=""><i class="fas fa-arrow-left pr-6 text-lg"></i></a>
+            <div class="flex flex-row items-center mt-6 mb-8">
+                <a href=""><i class="pr-6 text-lg fas fa-arrow-left"></i></a>
                 <h3 class="text-base-800 text-[36px] font-bold">Transaksi</h3>
             </div>
-            <div class="flex flex-col lg:flex-row justify-center mx-auto">
+            <div class="flex flex-col justify-center mx-auto lg:flex-row">
                 <div class="w-[30rem] h-[250px] p-8 mr-7 lg:mr-8 rounded-2xl bg-green-500 shadow-lg">
-                    <h3 class="text-xl font-bold pb-5">Apa yang bisa kamu dapatkan?</h3>
-                    <p class="text-base text-base-800">Dengan membeli paket layanan Kuliah Karier, kamu bisa dapat banyak hal menarik loh!</p>
+                    <h3 class="pb-5 text-xl font-bold">Apa yang bisa kamu dapatkan?</h3>
+                    <p class="text-base text-base-800">Dengan membeli paket layanan Kuliah Karier, kamu bisa dapat
+                        banyak hal menarik loh!</p>
                 </div>
-                <div class=" p-8 rounded-2xl bg-light-100 shadow-lg max-w-sm mt-5 lg:mt-0">
+                <div class="max-w-sm p-8 mt-5 shadow-lg rounded-2xl lg:mt-0">
                     <h3 class="text-xl">Paket Penjurusan IPA/IPS</h3>
-                    <table class=" w-full mt-3 auto border-spacing-2 transaction">
+                    <table class="w-full mt-3 auto border-spacing-2 transaction">
                         <tbody class="text-base-600">
                             <tr>
                                 <td class="py-2">ID Pesanan</td>
@@ -44,7 +45,7 @@
                             </tr>
                             <tr>
                                 <td class="py-2">Total Harga</td>
-                                <td class="py-2 text-right font-bold">Rp55.000</td>
+                                <td class="py-2 font-bold text-right">Rp55.000</td>
                             </tr>
                         </tbody>
                     </table>
@@ -65,6 +66,6 @@
     </section>
 </x-layouts.full-row>
 
-{{-- <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+{{-- <div class="flex flex-col w-full p-8 mt-10 bg-gray-100 rounded-lg lg:w-2/6 md:w-1/2 md:ml-auto md:mt-0">
 
 </div> --}}

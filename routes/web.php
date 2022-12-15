@@ -35,7 +35,11 @@ Route::middleware('guest')->group(function () {
 
 
 Route::get('/', function () {
-    return view('pages.transaction');
+    return view('pages.transactions.index');
+});
+
+Route::get('/receipt', function () {
+    return view('pages.transactions.receipt');
 });
 
 Route::middleware('auth')->group(function () {
