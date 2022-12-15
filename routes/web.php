@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
+// Route::get('/', function () {
+//     return view('pages.home');
+// })->name('home');
 
 Route::middleware('guest')->group(function () {
     Route::get('login', [LoginController::class, 'index'])->name('login');
@@ -34,9 +34,9 @@ Route::middleware('guest')->group(function () {
 // });
 
 
-// Route::get('/', function () {
-//     return view('pages.home-activities');
-// });
+Route::get('/', function () {
+    return view('pages.transaction');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get(
