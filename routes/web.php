@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.transactions.detailpembayaran');
+    return view('pages.transactions.blankhistory');
 });
 
 // Route::middleware('guest')->group(function () {
