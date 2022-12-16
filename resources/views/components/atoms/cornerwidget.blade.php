@@ -1,7 +1,7 @@
 <div class="fixed bottom-0 w-full">
     <div class="container relative mx-auto gap-y-1">
         <div class="absolute right-0 pb-20 bottom-8">
-            <div
+            <div id="whatsappBtn"
                 class="bg-green-600 transition-all hover:bg-green-700 hover:scale-125 text-light-100 h-[4.25rem] w-[4.25rem] rounded-full justify-center items-center flex">
                 <a rel="nofollow" href="https://wa.me/6282298881920?text=Hai%20Minju!%20Aku%20ingin%20Bertanya"
                     target="_blank">
@@ -21,6 +21,20 @@
 </div>
 
 <script>
+    //Go To top & whatsapp bubble
+const waBtn = document.getElementById('.whatsappBtn');
+window.addEventListener('scroll', () => {
+	if (window.pageYOffset < 500) {
+		waBtn?.classList.add('-right-16', 'lg:right-[5.7rem]');
+		waBtn?.classList.remove('lg:right-36');
+	} else {
+		waBtn?.classList.add('-right-16', 'lg:right-36');
+		waBtn?.classList.remove('lg:right-[5.7rem]');
+	}
+});
+
+
+
     // Start To Top Button
     var toTopButton = document.getElementById("to-top-button");
 

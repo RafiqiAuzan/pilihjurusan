@@ -16,43 +16,43 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('pages.home');
-// })->name('home');
-
-Route::middleware('guest')->group(function () {
-    Route::get('login', [LoginController::class, 'index'])->name('login');
-    Route::post('login', [LoginController::class, 'authenticate']);
-    Route::get('lupa-kata-sandi', [LoginController::class, 'index'])->name('forgot-password');
-});
-// Route::get('/', function () {
-//     return view('pages.partner');
-//     return view('pages.footer');
-// });
-// Route::get('/', function () {
-//     return view('pages.home-benefit');
-// });
-
-
 Route::get('/', function () {
     return view('pages.transactions.index');
-});
+})->name('transaction');
 
 Route::get('/receipt', function () {
     return view('pages.transactions.receipt');
-});
+})->name('receipt');
 
-Route::middleware('auth')->group(function () {
-    Route::get(
-        'logout',
-        function (Request $request) {
-            Auth::logout();
+// Route::middleware('guest')->group(function () {
+//     Route::get('login', [LoginController::class, 'index'])->name('login');
+//     Route::post('login', [LoginController::class, 'authenticate']);
+//     Route::get('lupa-kata-sandi', [LoginController::class, 'index'])->name('forgot-password');
+// });
+// // Route::get('/', function () {
+// //     return view('pages.partner');
+// //     return view('pages.footer');
+// // });
+// // Route::get('/', function () {
+// //     return view('pages.home-benefit');
+// // });
 
-            $request->session()->invalidate();
 
-            $request->session()->regenerateToken();
+// // Route::get('/', function () {
+// //     return view('pages.home-activities');
+// // });
 
-            return redirect()->to('login');
-        }
-    );
-});
+// Route::middleware('auth')->group(function () {
+//     Route::get(
+//         'logout',
+//         function (Request $request) {
+//             Auth::logout();
+
+//             $request->session()->invalidate();
+
+//             $request->session()->regenerateToken();
+
+//             return redirect()->to('login');
+//         }
+//     );
+// });
