@@ -20,10 +20,17 @@ Route::get('/', function () {
     return view('pages.transactions.index');
 })->name('transaction');
 
+Route::get('/transaction2', function () {
+    return view('pages.transactions.transaction2');
+})->name('transaction2');
+
 Route::get('/receipt', function () {
     return view('pages.transactions.receipt');
 })->name('receipt');
 
+Route::get('/detail-transaksi', function () {
+    return view('pages.transactions.detail-transaction');
+})->name('detail-transaksi');
 // Route::middleware('guest')->group(function () {
 //     Route::get('login', [LoginController::class, 'index'])->name('login');
 //     Route::post('login', [LoginController::class, 'authenticate']);
