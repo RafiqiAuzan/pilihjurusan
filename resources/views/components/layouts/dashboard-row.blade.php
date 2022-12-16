@@ -1,14 +1,15 @@
 @props(['class' => ''])
 
 <x-layouts.base class=" {{ $class }}">
+    <x-atoms.navs.dashboardnav />
 
     {{-- <x-atoms.navs.navbar /> --}}
-    <div class="min-h-screen bg-light-200">
+    <div class="min-h-screen lg:py-8 bg-light-200">
         {{-- There is sidebar here --}}
-        <div class="flex max-w-screen-xl lg:p-8 mx-auto">
-            {{-- <aside class="flex-none w-80 border">
+        <div class="flex max-w-screen-xl mx-auto lg:p-8">
+            <aside class="flex-none hidden w-80">
                 <div class="">test</div>
-            </aside> --}}
+            </aside>
             <div class="w-full">
                 <div class="">
 
