@@ -31,35 +31,24 @@ Route::get('/receipt', function () {
 Route::get('/detail-transaksi', function () {
     return view('pages.transactions.detail-transaction');
 })->name('detail-transaksi');
-// Route::middleware('guest')->group(function () {
-//     Route::get('login', [LoginController::class, 'index'])->name('login');
-//     Route::post('login', [LoginController::class, 'authenticate']);
-//     Route::get('lupa-kata-sandi', [LoginController::class, 'index'])->name('forgot-password');
-// });
-// // Route::get('/', function () {
-// //     return view('pages.partner');
-// //     return view('pages.footer');
-// // });
-// // Route::get('/', function () {
-// //     return view('pages.home-benefit');
-// // });
 
+Route::middleware('guest')->group(function () {
+    Route::get('login', [LoginController::class, 'index'])->name('login');
+    Route::post('login', [LoginController::class, 'authenticate']);
+    Route::get('lupa-kata-sandi', [LoginController::class, 'index'])->name('forgot-password');
+});
 
-// // Route::get('/', function () {
-// //     return view('pages.home-activities');
-// // });
+Route::middleware('auth')->group(function () {
+    Route::get(
+        'logout',
+        function (Request $request) {
+            Auth::logout();
 
-// Route::middleware('auth')->group(function () {
-//     Route::get(
-//         'logout',
-//         function (Request $request) {
-//             Auth::logout();
+            $request->session()->invalidate();
 
-//             $request->session()->invalidate();
+            $request->session()->regenerateToken();
 
-//             $request->session()->regenerateToken();
-
-//             return redirect()->to('login');
-//         }
-//     );
-// });
+            return redirect()->to('login');
+        }
+    );
+});

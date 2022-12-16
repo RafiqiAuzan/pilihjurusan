@@ -17,4 +17,4 @@ class Landing extends Controller
     {
         return view('pages.home');
     }
-}T
+}
