@@ -31,6 +31,9 @@ Route::get('/detail-transaksi', function () {
 Route::get('/transaksi-history', function() {
     return view('pages.transactions.blankhistory');
 })->name('transaksi-history');
+Route::get('/riwayat-transaksi', function() {
+    return view('pages.transactions.transaction-history');
+})->name('riwayat-transaksi');
 
 Route::middleware('guest')->group(function () {
     Route::get('login', [LoginController::class, 'index'])->name('login');
