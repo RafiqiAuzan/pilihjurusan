@@ -16,7 +16,7 @@
                     </x-atoms.button>
                 </div>
                 <div class="flex items-center gap-4">
-                    <x-atoms.button tag="a" status="transparent" class="cursor-pointer text-base-800">
+                    <x-atoms.button tag="a" href="transaction2" status="transparent" class="cursor-pointer text-base-800">
                         <i class="fas fa-arrow-left fa-xl"></i>
                     </x-atoms.button>
                     <h1 class="text-xl font-bold">Transaksi</h1>
@@ -51,7 +51,3 @@
         </div>
     </section>
 </x-layouts.container>
-
-{{-- <div class="flex flex-col w-full p-8 mt-10 bg-gray-100 rounded-lg lg:w-2/6 md:w-1/2 md:ml-auto md:mt-0">
-
-</div> --}}
