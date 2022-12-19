@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('pages.transactions.index');
 })->name('transaction');
 
+Route::get('/dashboard', function () {
+    return view('pages..user.dashboard.student');
+})->name('dashboard');
+
 Route::get('/transaction2', function () {
     return view('pages.transactions.transaction2');
 })->name('transaction2');
