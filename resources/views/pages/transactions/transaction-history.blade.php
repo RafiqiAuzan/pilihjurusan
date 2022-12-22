@@ -1,5 +1,5 @@
 <x-layouts.full-row title="Transction History">
-      <div class="flex flex-col w-full p-8 lg:rounded-3xl bg-light-100 gap-4">
+    <div class="flex flex-col w-full p-8 lg:rounded-3xl bg-light-100 gap-4">
         <div class="flex flex-col w-full gap-6 border-b border-light-400">
             <div class="flex flex-row gap-4 items-center">
                 <i class="lg:hidden fa-solid fa-arrow-left"></i>
@@ -20,18 +20,27 @@
                 </ul>
             </div>
         </div>
-        <div class="border p-4 rounded-2xl">
-            <div class ="flex flex-row items-center gap-3 ">
-                 <img class="w-28 rounded-3xl aspect-square" src="{{ asset('img/global/stonipe.png') }}" alt="Frame">
-                 <h1 class="text-lg text-base-800 border-b-2">Paket Penjurusan IPA/IPS</h1>
+        <div class="border border-light-400 p-4 rounded-2xl">
+            <div class="flex flex-row items-center gap-3 border-b border-light-400 pb-4">
+                <img class="w-28 rounded-3xl aspect-square" src="{{ asset('img/global/stonipe.png') }}" alt="Frame">
+                <h1 class="text-xl text-base-800 font-bold ">Paket Penjurusan IPA/IPS</h1>
             </div>
-            <div class="flex flex-row justify-between items-center  pt-4">
-                <p class="font-bold">29 November 2022 , 14:16</p>
-                <p class="font-bold">PJ01202211290001</p>
-            </div>
-            <p class="text-3lg pt-4">Rp60.000</p>
-            <div></div>
+            <table class="w-full mb-4">
+                <tbody class="">
+                    <tr>
+                        <td class="text-sm font-bold py-4">29 November 2022 , 14:16</td>
+                        <td class="text-right">PJ01202211290001</td>
+                    </tr>
+                    <tr>
+                        <td class="text-xl">Rp60.000</td>
+                    </tr>
+                    <tr>
+                        <td class="text-right">
+                            <x-atoms.button class="text-right" href="#" status="transparent">Lihat Detail</x-atoms.button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-
 </x-layouts.full-row>
