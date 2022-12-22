@@ -40,15 +40,13 @@
 
 
                 <div class="px-8 py-5 lg:w-[640px] rounded-xl bg-light-100">
-                    <h2 class="text-xl font-bold py-2">Paket Penjurusan IPA/IPS</h2>
-                    {{-- Images --}}
-                    <img class="w-28 lg:w-full hidden lg:block rounded-3xl aspect-square" src="{{ asset('img/global/stonipe.png') }}" alt="Frame">
-
-                    <table class="w-full transction-tables">
+                    <h2 class="text-xl font-bold py-4">Paket IPA/IPS</h2>
+                    
+                    <table class="w-full transction-tables mb-4">
                         <tbody class="">
                             <tr>
                                 <td>ID Transaksi</td>
-                                <td>IDPILJUR0123</td>
+                                <td>PJ01202211290002</td>
                             </tr>
                             <tr>
                                 <td>Metode</td>
