@@ -37,11 +37,8 @@ Route::get('/detail-transaksi', function () {
 })->name('detail-transaksi');
 
 Route::get('/transaksi-history', function() {
-    return view('pages.transactions.blankhistory');
-})->name('transaksi-history');
-Route::get('/riwayat-transaksi', function() {
     return view('pages.transactions.transaction-history');
-})->name('riwayat-transaksi');
+})->name('transaksi-history');
 
 Route::middleware('guest')->group(function () {
     Route::get('login', [LoginController::class, 'index'])->name('login');

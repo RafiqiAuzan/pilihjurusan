@@ -26,15 +26,27 @@
                     <div class="">
                         <h2 class="text-xl font-bold">Apa yang bisa kamu dapatkan</h2>
                     </div>
-                    <div class="">
+                    <div class="text-base-600">
                         <p class="">Dengan membeli paket layanan Kuliah Karier, kamu bisa dapat banyak hal menarik
                             loh!</p>
                         <ul class="mt-2 space-y-2">
-                            <li class="flex items-center gap-3"><i class="p-1 bg-green-400 rounded-full text-light-100 fa-2xs fas fa-check"></i>
+                            <li class="flex items-center gap-3"><i
+                                    class="p-1 bg-green-500 rounded-full text-light-100 fa-2xs fas fa-check"></i>
                                 Workshop</li>
-                            <li class="flex items-center gap-3"><i class="p-1 bg-green-400 rounded-full text-light-100 fa-2xs fas fa-check"></i>
+                            <li class="flex items-center gap-3"><i
+                                    class="p-1 bg-green-500 rounded-full text-light-100 fa-2xs fas fa-check"></i>
                                 Psikotest</li>
+                            <li class="flex items-center gap-3"><i
+                                    class="p-1 bg-green-500 rounded-full text-light-100 fa-2xs fas fa-check"></i>
+                                Tes Minat dan Bakat</li>
+                            <li class="flex items-center gap-3"><i
+                                    class="p-1 bg-green-500 rounded-full text-light-100 fa-2xs fas fa-check"></i>
+                                Tes IPA/IPS</li>
                         </ul>
+                    </div>
+                    <div class="pt-3 space-y-3">
+                        <h3 class="font-medium text-base-800">Keterangan</h3>
+                        <p class="text-base-700 text-sm">Pemesananmu yang dibayarkan melalui metode Manual akan diproses Maksimal dalam 1 hari kerja.</p>
                     </div>
                 </div>
 

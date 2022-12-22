@@ -106,7 +106,7 @@
                                 </label>
                             </div>
                             <div class="space-y-4 pt-4">
-                                <x-atoms.button tag="a" href="receipt" class="w-full text-center">Selanjutnya</x-atoms.button>
+                                <x-atoms.button tag="a" href="transaction2" class="w-full text-center">Selanjutnya</x-atoms.button>
                                 <x-atoms.button status="outline" class="w-full">Ubah Metode</x-atoms.button>
                             </div>
                         </div>
