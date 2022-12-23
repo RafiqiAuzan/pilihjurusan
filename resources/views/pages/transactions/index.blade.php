@@ -2,7 +2,7 @@
 
     {{-- Transaction --}}
     <section class="">
-        <div class="space-y-8">
+        <div class="space-y-8" x-data="{ 'exitTransaction': false }" @keydown.escape="exitTransaction = false">
             <div class="space-y-5">
                 <div class="flex flex-wrap gap-3">
                     <x-atoms.button tag="a" status="transparent" href="#" class="text-base-400 font-normal after:content-['>'] after:pl-3">Layanan
@@ -13,9 +13,25 @@
                     </x-atoms.button>
                 </div>
                 <div class="flex items-center gap-4">
-                    <x-atoms.button tag="a" status="transparent" class="cursor-pointer text-base-800" onclick="exitTransactionModal()">
+                    
+                    <x-atoms.button tag="a" status="transparent" class="cursor-pointer text-base-800" @click="exitTransaction = true">
                         <i class="fas fa-arrow-left fa-xl"></i>
                     </x-atoms.button>
+                    <!-- Modal -->
+                    <div class="fixed inset-0 z-30 flex items-center justify-center bg-dark-100 bg-opacity-50 p-8" x-show="exitTransaction" x-cloak>
+                        <!-- Modal inner -->
+                        <div class="max-w-md px-7 py-4 mx-auto text-left bg-light-100 rounded-3xl shadow-lg" @click.away="exitTransaction = false" x-transition:enter="motion-safe:ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100">
+                            <div>
+                                <h2 class="text-2xl font-bold">Apakah kamu yakin?</h2>
+                                <p class="text-base-500 my-6">Apakah kamu yakin untuk keluar dari halaman transaksi dan kembali ke halaman sebelumnya?</p>
+                                <div class="flex flex-row text-center mx-auto justify-center gap-x-3">
+                                    <x-atoms.button status="outline" @click="exitTransaction = false" class="border-0">Belum Yakin</x-atoms.button>
+                                    <x-atoms.button @click="exitTransaction = true">Yakin</x-atoms.button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <h1 class="text-4xl font-bold">Transaksi</h1>
                 </div>
             </div>
