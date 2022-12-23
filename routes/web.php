@@ -36,9 +36,9 @@ Route::get('/detail-transaksi', function () {
     return view('pages.transactions.detail-transaction');
 })->name('detail-transaksi');
 
-Route::get('/transaksi-history', function() {
+Route::get('/riwayat-transaksi', function() {
     return view('pages.transactions.transaction-history');
-})->name('transaksi-history');
+})->name('riwayat-transaksi');
 
 Route::middleware('guest')->group(function () {
     Route::get('login', [LoginController::class, 'index'])->name('login');
