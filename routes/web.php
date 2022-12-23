@@ -32,6 +32,10 @@ Route::get('/receipt', function () {
     return view('pages.transactions.receipt');
 })->name('receipt');
 
+Route::get('/receipt2', function () {
+    return view('pages.transactions.receipt2');
+})->name('receipt2');
+
 Route::get('/detail-transaksi', function () {
     return view('pages.transactions.detail-transaction');
 })->name('detail-transaksi');
