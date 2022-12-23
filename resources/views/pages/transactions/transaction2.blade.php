@@ -81,7 +81,7 @@
                     <div class="space-y-4">
                         <x-atoms.button tag="a" href="/receipt" class="w-full text-center">Selanjutnya
                         </x-atoms.button>
-                        <x-atoms.button status="outline" class="w-full">Ubah Metode</x-atoms.button>
+                        <x-atoms.button href="/" status="outline" class="w-full text-center">Ubah Metode</x-atoms.button>
                     </div>
                 </div>
 </x-layouts.container>
