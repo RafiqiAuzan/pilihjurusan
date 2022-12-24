@@ -61,7 +61,7 @@
 
 
         {{-- <div class="flex w-full h-screen items-center justify-center bg-grey-lighter">
-            <label class="flex w-64 flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-white">
+            <label class="flex w-64 flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-white">
                 
                 <input type='file' class="opacity-0 inline-block" />
                 <x-atoms.button class="mt-2 text-base leading-normal ">Upload</x-atoms.button>

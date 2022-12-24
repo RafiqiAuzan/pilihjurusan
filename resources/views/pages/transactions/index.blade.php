@@ -122,7 +122,7 @@
                                 </label>
                             </div>
                             <div class="space-y-4 pt-4">
-                                <x-atoms.button tag="a" href="transaksi" class="w-full text-center">Selanjutnya</x-atoms.button>
+                                <x-atoms.button tag="a" href="transaksi2" class="w-full text-center">Selanjutnya</x-atoms.button>
                             </div>
                         </div>
 

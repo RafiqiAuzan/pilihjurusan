@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/transaksi', function () {
     return view('pages.transactions.index');
 })->name('transaction');
 
@@ -24,7 +24,7 @@ Route::get('/dashboard', function () {
     return view('pages..user.dashboard.student');
 })->name('dashboard');
 
-Route::get('/transaksi', function () {
+Route::get('/transaksi2', function () {
     return view('pages.transactions.transaction2');
 })->name('transaction2');
 
