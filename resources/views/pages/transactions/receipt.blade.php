@@ -33,25 +33,19 @@
                         <span class="px-6 py-1.5 rounded-full bg-[#005fff] text-lg text-light-100 font-semibold">BRI</span>
                         <h2 class="text-2xl font-bold">02141241212</h2>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <p class="font-display text-xl font-normal text-base-700">Total yang harus kamu transfer:</p>
+                    <div class="lg:flex items-center gap-4">
+                        <p class="font-display lg:text-xl text-base font-normal text-base-700">Total yang harus kamu transfer:</p>
                         <p class="font-display text-2xl font-bold">Rp60.000</p>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <p class="font-display text-xl font-normal text-base-700">Tenggat waktu Transfer:</p>
+                    <div class="lg:flex items-center gap-4">
+                        <p class="font-display lg:text-xl text-base font-normal text-base-700">Tenggat waktu Transfer:</p>
                         <p class="font-display text-2xl font-bold text-danger">00.28.12</p>
                     </div>
                 </div>
-                {{-- <div class="space-y-4">
-                    <h2 class="text-xl font-bold">Upload Bukti Pembayaran Kamu</h2>
-                    <p class="">Upload struk pembayaran atau screenshot bukti pembayaran dari transaksi yang
-                        telah kamu lakukan</p>
-                    <input type="file">
-                </div> --}}
-                <div class="flex justify-end gap-4">
-                    <x-atoms.button href="rincian2" status="solid" class="">Saya sudah membayar</x-atoms.button>
-                </div>
             </form>
+            <div class="flex">
+                <x-atoms.button href="rincian2" status="solid" class="w-full sm:ml-auto sm:w-auto text-center">Saya sudah membayar</x-atoms.button>
+            </div>
         </div>
     </section>
 </x-layouts.container>
