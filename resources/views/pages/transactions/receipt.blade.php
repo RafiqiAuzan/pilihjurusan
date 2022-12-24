@@ -1,7 +1,7 @@
 <x-layouts.container title="Aplikasi Tes Psikologi Terbaik">
 
     {{-- Transaction --}}
-    <section class="">
+    <section class="pt-8">
         <div class="space-y-8">
             <div class="space-y-5">
                 <div class="flex flex-wrap gap-3">
@@ -49,7 +49,7 @@
                     <input type="file">
                 </div> --}}
                 <div class="flex justify-end gap-4">
-                    <x-atoms.button href="receipt2" status="solid" class="">Saya sudah membayar</x-atoms.button>
+                    <x-atoms.button href="rincian2" status="solid" class="">Saya sudah membayar</x-atoms.button>
                 </div>
             </form>
         </div>

@@ -24,19 +24,19 @@ Route::get('/dashboard', function () {
     return view('pages..user.dashboard.student');
 })->name('dashboard');
 
-Route::get('/transaction2', function () {
+Route::get('/transaksi', function () {
     return view('pages.transactions.transaction2');
 })->name('transaction2');
 
-Route::get('/receipt', function () {
+Route::get('/rincian', function () {
     return view('pages.transactions.receipt');
 })->name('receipt');
 
-Route::get('/receipt2', function () {
+Route::get('/rincian2', function () {
     return view('pages.transactions.receipt2');
 })->name('receipt2');
 
-Route::get('/detail-transaksi', function () {
+Route::get('/riwayat-transaksi/detail-transaksi', function () {
     return view('pages.transactions.detail-transaction');
 })->name('detail-transaksi');
 

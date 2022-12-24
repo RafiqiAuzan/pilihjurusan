@@ -1,7 +1,7 @@
 <x-layouts.container title="Aplikasi Tes Psikologi Terbaik">
 
     {{-- Transaction --}}
-    <section class="">
+    <section class="pt-8">
         <div class="space-y-8" x-data="{ 'exitTransaction': false }" @keydown.escape="exitTransaction = false">
             <div class="space-y-5">
                 <div class="flex flex-wrap gap-3">
@@ -122,7 +122,7 @@
                                 </label>
                             </div>
                             <div class="space-y-4 pt-4">
-                                <x-atoms.button tag="a" href="transaction2" class="w-full text-center">Selanjutnya</x-atoms.button>
+                                <x-atoms.button tag="a" href="transaksi" class="w-full text-center">Selanjutnya</x-atoms.button>
                             </div>
                         </div>
 

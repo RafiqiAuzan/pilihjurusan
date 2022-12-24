@@ -2,7 +2,7 @@
 
 
     {{-- Transaction --}}
-    <section class="">
+    <section class="pt-8">
         <div class="space-y-8">
             <div class="space-y-5">
                 <div class="flex flex-wrap gap-3">
@@ -79,7 +79,7 @@
                         </tbody>
                     </table>
                     <div class="space-y-4">
-                        <x-atoms.button tag="a" href="/receipt" class="w-full text-center">Selanjutnya
+                        <x-atoms.button tag="a" href="rincian" class="w-full text-center">Selanjutnya
                         </x-atoms.button>
                         <x-atoms.button href="/" status="outline" class="w-full text-center">Ubah Metode</x-atoms.button>
                     </div>

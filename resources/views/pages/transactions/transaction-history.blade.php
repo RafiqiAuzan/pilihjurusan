@@ -1,4 +1,17 @@
-<x-layouts.full-row title="Transction History">
+<x-layouts.dashboard title="Transction History">
+    <nav class="my-8">
+        <div class="flex flex-wrap gap-3">
+            <x-atoms.button tag="a" status="transparent" href="#"
+                class="text-base-400 font-normal after:content-['>'] after:pl-3">Riwayat Transaksi
+            </x-atoms.button>
+            <x-atoms.button tag="a" status="transparent" href="#"
+                class="text-base-400 font-normal after:content-['>'] after:pl-3 after:text-base-800">Paket
+                Penjurusan IPA/IPS</x-atoms.button>
+            <x-atoms.button tag="a" status="transparent" href="#"
+                class="font-normal text-base-800">Detail Transaksi
+            </x-atoms.button>
+        </div>
+    </nav>
     <div class="flex flex-col w-full p-8 lg:rounded-3xl bg-light-100 gap-4">
         <div class="flex flex-col w-full gap-6 border-light-400">
             <div class="flex flex-row gap-4 items-center">
@@ -22,7 +35,7 @@
                 </div>
                 {{-- Tab Menunggu Konfirmasi --}}
                 <div x-show="tab === 'menungguKonfirmasi'" x-cloak>
-                    <div class="border border-light-400 p-4 rounded-2xl mt-8">
+                    <a href="riwayat-transaksi/detail-transaksi"><div class="border border-light-400 p-4 rounded-2xl mt-8">
                         <div class="flex flex-row items-center gap-3 border-b border-light-400 pb-4">
                             <img class="w-28 rounded-3xl aspect-square" src="{{ asset('img/global/stonipe.png') }}" alt="Frame">
                             <h1 class="text-xl text-base-800 font-bold ">Paket Penjurusan IPA/IPS</h1>
@@ -44,7 +57,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div></a>
 
                     <div class="border border-light-400 p-4 rounded-2xl mt-8">
                         <div class="flex flex-row items-center gap-3 border-b border-light-400 pb-4">
@@ -260,5 +273,5 @@
             </div>
         </div>
     </div>
-</x-layouts.full-row>
+</x-layouts.dashboard>
 

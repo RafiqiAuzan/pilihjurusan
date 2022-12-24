@@ -1,7 +1,7 @@
 <x-layouts.container title="Aplikasi Tes Psikologi Terbaik">
 
     {{-- Transaction --}}
-    <section class="">
+    <section class="pt-8">
         <div class="space-y-8">
             <div class="space-y-5">
                 <div class="flex flex-wrap gap-3">

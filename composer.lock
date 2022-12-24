@@ -7226,7 +7226,6 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-<<<<<<< HEAD
             "version": "9.2.21",
             "source": {
                 "type": "git",
@@ -7237,18 +7236,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/3f893e19712bb0c8bc86665d1562e9fd509c4ef0",
                 "reference": "3f893e19712bb0c8bc86665d1562e9fd509c4ef0",
-=======
-            "version": "9.2.20",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "af7463c955007de36db0c5e26d03e2f933c2e980"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/af7463c955007de36db0c5e26d03e2f933c2e980",
-                "reference": "af7463c955007de36db0c5e26d03e2f933c2e980",
->>>>>>> origin/transaksi-detail-pembayaran
                 "shasum": ""
             },
             "require": {
@@ -7304,11 +7291,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.21"
-=======
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.20"
->>>>>>> origin/transaksi-detail-pembayaran
             },
             "funding": [
                 {
@@ -7316,11 +7299,7 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD
             "time": "2022-12-14T13:26:54+00:00"
-=======
-            "time": "2022-12-13T07:49:28+00:00"
->>>>>>> origin/transaksi-detail-pembayaran
         },
         {
             "name": "phpunit/php-file-iterator",
