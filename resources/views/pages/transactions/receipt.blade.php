@@ -19,7 +19,7 @@
                     </x-atoms.button>
                 </div>
                 <div class="flex items-center gap-8">
-                    <x-atoms.button tag="a" href="transaction2" status="transparent" class="cursor-pointer text-base-800">
+                    <x-atoms.button tag="a" href="transaksi2" status="transparent" class="cursor-pointer text-base-800">
                         <i class="fas fa-arrow-left fa-xl"></i>
                     </x-atoms.button>
                     <h1 class="text-4xl font-bold">Konfirmasi Pembayaran</h1>

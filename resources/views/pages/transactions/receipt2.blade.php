@@ -19,7 +19,7 @@
                     </x-atoms.button>
                 </div>
                 <div class="flex items-center gap-8">
-                    <x-atoms.button tag="a" href="receipt" status="transparent" class="cursor-pointer text-base-800">
+                    <x-atoms.button tag="a" href="rincian" status="transparent" class="cursor-pointer text-base-800">
                         <i class="fas fa-arrow-left fa-xl"></i>
                     </x-atoms.button>
                     <h1 class="text-4xl font-bold">Konfirmasi Pembayaran</h1>
@@ -55,7 +55,7 @@
                 </div>
             </form>
             <div class="flex justify-end gap-4">
-                <x-atoms.button href="receipt2" status="solid" class="">Konfirmasi</x-atoms.button>
+                <x-atoms.button status="solid" class="">Konfirmasi</x-atoms.button>
             </div>
         </div>
 

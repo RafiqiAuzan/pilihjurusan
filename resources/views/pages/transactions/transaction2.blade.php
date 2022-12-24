@@ -14,7 +14,7 @@
                     </x-atoms.button>
                 </div>
                 <div class="flex items-center gap-4">
-                    <x-atoms.button tag="a" href="/" status="transparent" class="cursor-pointer text-base-800" onclick="exitTransactionModal()">
+                    <x-atoms.button tag="a" href="transaksi" status="transparent" class="cursor-pointer text-base-800" onclick="exitTransactionModal()">
                         <i class="fas fa-arrow-left fa-xl"></i>
                     </x-atoms.button>
                     <h1 class="text-xl font-bold">Transaksi</h1>
