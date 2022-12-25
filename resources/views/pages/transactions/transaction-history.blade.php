@@ -35,7 +35,7 @@
                 </div>
                 {{-- Tab Menunggu Konfirmasi --}}
                 <div x-show="tab === 'menungguKonfirmasi'" x-cloak>
-                    <a href="riwayat-transaksi/detail-transaksi"><div class="border border-light-400 p-4 rounded-2xl mt-8">
+                   <div class="border border-light-400 p-4 rounded-2xl mt-8">
                         <div class="flex flex-row items-center gap-3 border-b border-light-400 pb-4">
                             <img class="w-28 rounded-3xl aspect-square" src="{{ asset('img/global/stonipe.png') }}" alt="Frame">
                             <h1 class="text-xl text-base-800 font-bold ">Paket Penjurusan IPA/IPS</h1>
@@ -52,12 +52,12 @@
                                 <tr>
                                     <td></td>
                                     <td class="text-right">
-                                        <x-atoms.button class="text-right" href="#" status="transparent">Lihat Detail</x-atoms.button>
+                                        <x-atoms.button class="text-right" href="detail-transaksi" status="transparent">Lihat Detail</x-atoms.button>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div></a>
+                    </div>
 
                     <div class="border border-light-400 p-4 rounded-2xl mt-8">
                         <div class="flex flex-row items-center gap-3 border-b border-light-400 pb-4">

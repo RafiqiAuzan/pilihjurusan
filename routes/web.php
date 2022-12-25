@@ -40,11 +40,7 @@ Route::get('/rincian2', function () {
     return view('pages.transactions.receipt2');
 })->name('receipt2');
 
-Route::get('/rincian3', function () {
-    return view('pages.transactions.receipt3');
-})->name('receipt3');
-
-Route::get('/riwayat-transaksi/detail-transaksi', function () {
+Route::get('/detail-transaksi', function () {
     return view('pages.transactions.detail-transaction');
 })->name('detail-transaksi');
 
