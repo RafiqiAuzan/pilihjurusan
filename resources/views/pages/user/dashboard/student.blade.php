@@ -1,8 +1,8 @@
 <x-layouts.container title="Dashboard">
 
-    <section class="bg-light-200 pb-1">
-        <div class="container mx-auto">
-            <form class="bg-light-100 p-6 rounded-3xl mb-10">
+    <section class="bg-light-200 pb-1 ">
+        <div class="container mx-auto mt-10">
+            <form class="bg-light-100 p-6 rounded-3xl mb-8">
                 <h1 class="text-center text-[25px]">coming soon</h1>
             </form>
             <form class="bg-light-100 p-20 rounded-3xl mb-10">
