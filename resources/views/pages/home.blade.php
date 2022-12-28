@@ -731,8 +731,5 @@
         </div>
     </section>
 
-    {{-- Footer --}}
-    <x-atoms.navs.homefooter />
-
     @vite('resources/js/swiper.js')
 </x-layouts.full-row>
